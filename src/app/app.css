@@ -14,7 +14,10 @@
 }
 
 .transbox {
-  margin: 0 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
   padding: 20px;
   background-color: rgb(204, 204, 204, 0.7);
   border: 1px solid rgb(222, 216, 216);
