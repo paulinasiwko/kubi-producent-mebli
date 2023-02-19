@@ -11,7 +11,7 @@ export default function NavigationMenu() {
             <img
               src={require('../img/logo.jpg')}
               alt='Kubi - producent MEBLI'
-              style={{width: '250px'}}/>
+              style={{width: '180px', height: '50px'}}/>
           </Navbar.Brand>
           <Nav className='me-auto'>
             <Button variant='light' className='button'>O firmie</Button>
@@ -19,7 +19,7 @@ export default function NavigationMenu() {
             <Button variant='light' className='button'>Oferta</Button>
             <Button variant='light' className='button'>Kontakt</Button>
           </Nav>
-          <Button variant='primary' className='facebookButton'>Polub nas na Facebooku!</Button>
+          <h6>(+48) 000-555-666</h6>
         </Container>
       </Navbar>
     </>

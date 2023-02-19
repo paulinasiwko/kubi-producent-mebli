@@ -1,15 +1,5 @@
 .navbar {
-    border-bottom: 2px solid grey;
-}
-
-.additionalNavbar {
-    background-color: grey;
-    height: 40px;
-}
-
-.additionalNavbarText {
-    margin: 0 0 0 50%;
-    color: white;
+    border-bottom: 2px solid black;
 }
 
 .mainPhoto {
@@ -42,11 +32,7 @@
 
 .button {
     margin: 0 10px;
-    border-bottom: 1px solid grey;
-    box-shadow: 0 3px 5px 0 grey;
+    border-top: 1px solid black !important;
+    background-color: white !important;
 }
 
-.facebookButton {
-    border-bottom: 1px solid grey;
-    box-shadow: 0 2px 3px 0 grey;
-}

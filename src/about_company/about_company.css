@@ -1,0 +1,10 @@
+.aboutCompany {
+    color: white;
+    background-color: black;
+}
+
+.companyPhoto {
+    display: block;
+    margin: 30px auto;
+    width: 50%;
+}
