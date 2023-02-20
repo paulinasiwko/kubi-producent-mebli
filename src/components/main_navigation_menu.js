@@ -19,7 +19,7 @@ export default function NavigationMenu() {
             <Button variant='light' className='button'>Oferta</Button>
             <Button variant='light' className='button'>Kontakt</Button>
           </Nav>
-          <h6>(+48) 000-555-666</h6>
+          <h6 className='contactNumber'>(+48) 000-555-666</h6>
         </Container>
       </Navbar>
     </>

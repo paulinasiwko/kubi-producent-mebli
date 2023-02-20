@@ -1,5 +1,6 @@
 .navbar {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid lightgrey;
+    background-color: white;
 }
 
 .mainPhoto {
@@ -13,6 +14,10 @@
     margin-left: 20%;
 }
 
+.contactNumber {
+    margin-right: 5%;
+}
+
 .transbox {
     display: block;
     margin-left: auto;
@@ -24,12 +29,8 @@
     box-shadow: 0 3px 5px 0 grey;
 }
 
-.galleryRow {
-    margin: 2rem 1rem;
-}
-
 .col {
-    margin-left: 10%;
+    margin-left: 5%;
     margin-bottom: 5%;
 }
 
@@ -37,11 +38,11 @@
 
 .button {
     margin: 0 10px;
-    border-top: 1px solid black !important;
     background-color: white !important;
 }
 
 .cardButton {
+    background-color: white;
     margin: 0 auto;
     display: block;
 }

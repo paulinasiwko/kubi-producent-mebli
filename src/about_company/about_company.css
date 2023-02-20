@@ -1,10 +1,27 @@
 .aboutCompany {
-    color: white;
-    background-color: black;
+    margin-top: 80%;
 }
 
 .companyPhoto {
     display: block;
-    margin: 30px auto;
+    margin: 25% auto;
     width: 50%;
+}
+
+.companyDescription {
+    font-style: italic;
+    margin: 5% 5% 0 10%;
+}
+
+.borderBottom {
+    border-bottom: 1px solid white;
+    margin-top: 5%;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.signature {
+    text-align: right;
+    font-weight: bold;
+    margin: 5% 10% 5% 0;
 }

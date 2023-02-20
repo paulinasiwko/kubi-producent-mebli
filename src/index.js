@@ -9,14 +9,15 @@ import './index.css';
 
 import '../node_modules/react-bootstrap/dist/react-bootstrap';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import ContactInfo from "./contact_info/contact_info";
 
-import GalleryPage from "./gallery/gallery";
-import App from "./app/app";
+//import GalleryPage from "./gallery/main_gallery";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GalleryPage />
+    <ContactInfo />
   </React.StrictMode>
 );
 
