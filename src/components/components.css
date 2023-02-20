@@ -28,6 +28,11 @@
     margin: 2rem 1rem;
 }
 
+.col {
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
 /* Buttons */
 
 .button {
@@ -36,3 +41,7 @@
     background-color: white !important;
 }
 
+.cardButton {
+    margin: 0 auto;
+    display: block;
+}
