@@ -1,23 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-//import App from "./app/app";
-//import AboutCompany from "./about_company/about_company.js";
+import App from "./app/app";
+import AboutCompany from "./about_company/about_company.js";
 
 
 // React Bootstrap Configuration
 
 import '../node_modules/react-bootstrap/dist/react-bootstrap';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
-//import ContactInfo from "./contact_info/contact_info";
+import ContactInfo from "./contact_info/contact_info";
 
 import GalleryPage from "./gallery/main_gallery";
+import MainPage from "./home_page/home_page";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GalleryPage />
+    <AboutCompany />
   </React.StrictMode>
 );
 

@@ -12,7 +12,7 @@ export default function AboutCompany() {
           <Col sm={3} style={{color:'white', backgroundColor: 'grey', fontWeight: 'bold', textAlign: 'center'}}>
             <h1 className='aboutCompany'>O firmie</h1>
           </Col>
-          <Col sm={2}>
+          <Col sm={2} style={{backgroundColor: 'white'}}>
             <img src={require('../img/zobal.png')} alt='Zobal' className='companyPhoto' />
             <img src={require('../img/gtv.png')} alt='GTV' className='companyPhoto' />
             <img src={require('../img/swiss_krono.png')} alt='Swiss-krono' className='companyPhoto'/>

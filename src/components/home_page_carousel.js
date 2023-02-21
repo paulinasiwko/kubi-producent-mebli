@@ -2,7 +2,7 @@ import React from "react";
 import {Button, Carousel} from "react-bootstrap";
 import './components.css';
 
-export default function MainPageScreen() {
+export default function HomePageScreen() {
 
   return (
     <Carousel variant='dark'>
