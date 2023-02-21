@@ -1,5 +1,5 @@
 .navbar {
-    border-bottom: 2px solid lightgrey;
+    border-bottom: 1px solid grey;
     background-color: white;
 }
 
@@ -36,9 +36,10 @@
 
 /* Buttons */
 
-.button {
+.navbarButton {
     margin: 0 10px;
     background-color: white !important;
+    border-bottom: 1px solid grey !important;
 }
 
 .cardButton {

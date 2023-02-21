@@ -18,10 +18,10 @@ export default function NavigationMenu() {
               style={{width: '180px', height: '50px'}}/>
           </Navbar.Brand>
           <Nav className='me-auto'>
-            <Button variant='light' className='button' onClick={handleClick}>O firmie</Button>
-            <Button variant='light' className='button'>Galeria</Button>
-            <Button variant='light' className='button'>Oferta</Button>
-            <Button variant='light' className='button'>Kontakt</Button>
+            <Button className='navbarButton' variant='light' onClick={handleClick}>O firmie</Button>
+            <Button className='navbarButton' variant='light'>Galeria</Button>
+            <Button className='navbarButton' variant='light'>Oferta</Button>
+            <Button className='navbarButton' variant='light'>Kontakt</Button>
           </Nav>
           <h6 className='contactNumber'>(+48) 000-555-666</h6>
         </Container>
