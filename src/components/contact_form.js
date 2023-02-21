@@ -8,8 +8,8 @@ export default function ContactForm() {
       <Container>
         <Row>
           <Col>
-            <Card>
-              <Card.Header className='p-3' style={{backgroundColor: 'grey', color: 'white'}}>
+            <Card style={{border: '1px solid black'}}>
+              <Card.Header className='p-3' style={{backgroundColor: 'lightgrey', color: 'black'}}>
                 <h4>Napisz do nas!</h4>
               </Card.Header>
               <Card.Body className='shadow'>
@@ -41,7 +41,7 @@ export default function ContactForm() {
                   <FormGroup className='mt-3'>
                     <Button
                       className='me-2'
-                      variant='secondary'
+                      variant='light'
                       size='sm'
                       type='submit'>Wyślij</Button>
                   </FormGroup>

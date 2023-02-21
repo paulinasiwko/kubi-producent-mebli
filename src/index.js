@@ -13,12 +13,14 @@ import ContactInfo from "./contact_info/contact_info";
 
 import GalleryPage from "./gallery/main_gallery";
 import MainPage from "./home_page/home_page";
+import HomePage from "./home_page/home_page";
+import {Container} from "react-bootstrap";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AboutCompany />
+    <ContactInfo />
   </React.StrictMode>
 );
 

@@ -9,12 +9,13 @@
 
 .pageBackgroundPhoto {
     background-image: url('../img/kuchnia_na_wymiar.jpg');
+    background-size: cover;
 }
 
 .aboutCompanyTransbox {
     display: block;
     border: 1px solid grey;
-    margin: 5% 10% 5% 30%;
+    margin: 5% 10% 5% 20%;
     background-color: rgb(211, 211, 211, 0.8);
 }
 

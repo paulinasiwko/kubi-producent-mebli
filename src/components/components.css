@@ -1,5 +1,5 @@
 .navbar {
-    border-bottom: 1px solid grey;
+    border-bottom: 2px solid grey;
     background-color: white;
 }
 
@@ -30,8 +30,7 @@
 }
 
 .col {
-    margin-left: 5%;
-    margin-bottom: 5%;
+    margin: 0 auto 5% auto;
 }
 
 /* Buttons */
@@ -43,7 +42,8 @@
 }
 
 .cardButton {
-    background-color: white;
-    margin: 0 auto;
-    display: block;
+    background-color: white !important;
+    margin: 0 auto !important;
+    display: block !important;
+    border-bottom: 1px solid grey !important;
 }

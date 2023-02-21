@@ -48,6 +48,20 @@ export default function HomePageScreen() {
           </div>
         </Carousel.Caption>
       </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src={require('../img/meble_pokojowe.jpg')}
+          alt='Meble pokojowe'
+          className='mainPhoto'/>
+        <Carousel.Caption>
+          <div className='transbox'>
+            <h1 className='title'>Meble pokojowe i RTV</h1>
+            <Button
+              variant='light'
+              className='mt-3 button'>Zobacz galerię</Button>
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
     </Carousel>
   );
 }

@@ -8,10 +8,14 @@ export default function ContactInfo() {
   return (
     <>
       <NavigationMenu />
+      <div className='form'>
+        <ContactForm />
+      </div>
       <Container fluid>
         <Row>
-          <Col sm={7} style={{backgroundColor: 'silver', color: 'white'}}>
-            <h2 className='mt-4' style={{textAlign: 'center'}}>Kontakt</h2>
+          <Col sm={9} className='contactDetailsBackground'>
+            <div className='contactInfoTransbox'>
+            <h2 className='contactDetails'>Kontakt</h2>
             <p className='contactDetails'>
               Przedsiębiorstwo Produkcyjno - Handlowo - Usługowe <br />
               "MEBLE" s.c. Import-Export Maria Bożyczko, Jerzy Bożyczko <br />
@@ -24,15 +28,20 @@ export default function ContactInfo() {
               <br />
               Tel: 535 227 662 - Piotr Bożyczko, e-mail: projektybozyczko@wp.pl
             </p>
-          </Col>
-          <Col sm={5} style={{backgroundColor: 'lightgrey'}}>
-            <div className='mt-4'>
-              <ContactForm />
             </div>
           </Col>
+          <Col sm={3} style={{backgroundColor: 'grey'}}>
+          </Col>
         </Row>
-        <Row>
+        <Row style={{backgroundColor: 'white'}}>
           Mapa
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
         </Row>
       </Container>
     </>
