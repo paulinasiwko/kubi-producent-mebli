@@ -2,6 +2,7 @@ import React from 'react';
 import './about_company.css';
 import NavigationMenu from "../components/main_navigation_menu";
 import {Container, Col, Row } from 'react-bootstrap';
+import Footer from "../components/footer";
 
 export default function AboutCompany() {
   return (
@@ -45,6 +46,7 @@ export default function AboutCompany() {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </>
   );
 }

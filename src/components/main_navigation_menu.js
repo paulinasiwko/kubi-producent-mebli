@@ -3,7 +3,7 @@ import {Button, Container, Nav, Navbar } from 'react-bootstrap';
 import './components.css';
 import { Link } from "react-router-dom";
 import SocialFollow from "./social_follow";
-import { FaPhone } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function NavigationMenu() {
   return (
@@ -24,7 +24,7 @@ export default function NavigationMenu() {
             <Link to={'/gallery'}><Button className='navbarButton' variant='light'>Galeria</Button></Link>
             <Link to={'/contact-info'}><Button className='navbarButton' variant='light'>Kontakt</Button></Link>
           </Nav>
-          <h6 className='contactNumber'><FaPhone /> (+48) 502-472-763</h6>
+          <h6 className='contactNumber'><FaPhoneAlt /> (+48) 502-472-763</h6>
           <SocialFollow />
         </Container>
       </Navbar>

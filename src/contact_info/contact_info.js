@@ -3,6 +3,7 @@ import './contact_info.css';
 import NavigationMenu from "../components/main_navigation_menu";
 import ContactForm from "../components/contact_form";
 import {Col, Container, Row} from "react-bootstrap";
+import Footer from "../components/footer";
 
 export default function ContactInfo() {
   return (
@@ -44,6 +45,7 @@ export default function ContactInfo() {
           <br/>
         </Row>
       </Container>
+      <Footer />
     </>
   );
 }

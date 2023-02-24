@@ -2,6 +2,7 @@ import React from 'react';
 import './main_gallery.css';
 import NavigationMenu from "../components/main_navigation_menu";
 import GallerySelect from "../components/gallery_select";
+import Footer from "../components/footer";
 
 export default function GalleryPage() {
   return (
@@ -19,6 +20,7 @@ export default function GalleryPage() {
           thirdCard={'Łazienki'}
           fourthCard={'Meble pokojowe i RTV'}/>
       </div>
+      <Footer />
     </>
   );
 }
