@@ -23,10 +23,9 @@ export default function ContactInfo() {
               82-335 Jegłownik, ul. Jasna 6 <br />
               <br />
               NIP: 5783140291 <br />
-              <br />
               REGON: 385226970 <br />
               <br />
-              Tel: 502-472-763 <br/>
+              Tel: (+48) 502-472-763 <br/>
               E-mail: kubimeble@icloud.com
             </p>
             </div>
