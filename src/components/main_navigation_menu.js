@@ -2,6 +2,7 @@ import React from 'react';
 import {Button, Container, Nav, Navbar } from 'react-bootstrap';
 import './components.css';
 import { Link } from "react-router-dom";
+import SocialFollow from "./social_follow";
 
 function handleClick() {
   <Link to='/about_company' />
@@ -24,6 +25,7 @@ export default function NavigationMenu() {
             <Button className='navbarButton' variant='light'>Kontakt</Button>
           </Nav>
           <h6 className='contactNumber'>(+48) 000-555-666</h6>
+          <SocialFollow />
         </Container>
       </Navbar>
     </>

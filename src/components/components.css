@@ -10,12 +10,15 @@
 
 .title {
     border-bottom: 4px solid rgb(239, 239, 239);
-    margin-right: 20%;
-    margin-left: 20%;
+    margin: auto 20%;
 }
 
 .contactNumber {
-    margin-right: 5%;
+    margin: 1px 2% 0 0;
+}
+
+.facebookSocial {
+    margin-right: 2%;
 }
 
 .transbox {
