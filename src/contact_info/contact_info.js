@@ -17,16 +17,17 @@ export default function ContactInfo() {
             <div className='contactInfoTransbox'>
             <h2 className='contactDetails'>Kontakt</h2>
             <p className='contactDetails'>
-              Przedsiębiorstwo Produkcyjno - Handlowo - Usługowe <br />
-              "MEBLE" s.c. Import-Export Maria Bożyczko, Jerzy Bożyczko <br />
+              <b>KUBI - Producent Mebli</b> <br />
+              Meble na wymiar Jakub Podufalski <br />
               <br />
-              82-300 Elbląg, ul. Nowodworska 29 <br />
+              82-335 Jegłownik, ul. Jasna 6 <br />
               <br />
-              NIP: 578-25-94-423 <br />
+              NIP: 5783140291 <br />
               <br />
-              REGON: 170778986 <br />
+              REGON: 385226970 <br />
               <br />
-              Tel: 535 227 662 - Piotr Bożyczko, e-mail: projektybozyczko@wp.pl
+              Tel: 502-472-763 <br/>
+              E-mail: kubimeble@icloud.com
             </p>
             </div>
           </Col>
