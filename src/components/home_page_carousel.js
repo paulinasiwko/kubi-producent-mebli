@@ -1,6 +1,7 @@
 import React from "react";
 import {Button, Carousel} from "react-bootstrap";
 import './components.css';
+import { Link } from "react-router-dom";
 
 export default function HomePageScreen() {
 
@@ -14,9 +15,9 @@ export default function HomePageScreen() {
         <Carousel.Caption>
           <div className='transbox'>
             <h1 className='title'>Kuchnie na wymiar</h1>
-            <Button
+            <Link to={'/gallery'}><Button
               variant='light'
-              className='mt-3 button'>Zobacz galerię</Button>
+              className='mt-3 button'>Zobacz galerię</Button></Link>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -28,9 +29,9 @@ export default function HomePageScreen() {
         <Carousel.Caption>
           <div className='transbox'>
             <h1 className='title'>Szafy i garderoby</h1>
-            <Button
+            <Link to={'/gallery'}><Button
               variant='light'
-              className='mt-3 button'>Zobacz galerię</Button>
+              className='mt-3 button'>Zobacz galerię</Button></Link>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -42,9 +43,9 @@ export default function HomePageScreen() {
         <Carousel.Caption>
           <div className='transbox'>
             <h1 className='title'>Łazienki</h1>
-            <Button
+            <Link to={'/gallery'}><Button
               variant='light'
-              className='mt-3 button'>Zobacz galerię</Button>
+              className='mt-3 button'>Zobacz galerię</Button></Link>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -56,9 +57,9 @@ export default function HomePageScreen() {
         <Carousel.Caption>
           <div className='transbox'>
             <h1 className='title'>Meble pokojowe i RTV</h1>
-            <Button
+            <Link to={'/gallery'}><Button
               variant='light'
-              className='mt-3 button'>Zobacz galerię</Button>
+              className='mt-3 button'>Zobacz galerię</Button></Link>
           </div>
         </Carousel.Caption>
       </Carousel.Item>

@@ -4,7 +4,13 @@ import NavigationMenu from "../components/main_navigation_menu";
 import ContactForm from "../components/contact_form";
 import {Col, Container, Row} from "react-bootstrap";
 import Footer from "../components/footer";
+import Map from '../components/map';
 
+const location = {
+  address: 'Jasna 6, 82-335 Jegłownik, Polska',
+  lat: 54.121701912291094,
+  lng: 19.303385726980476,
+}
 export default function ContactInfo() {
   return (
     <>
@@ -35,17 +41,11 @@ export default function ContactInfo() {
           </Col>
         </Row>
         <Row style={{backgroundColor: 'white'}}>
-          Mapa
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
         </Row>
       </Container>
       <Footer />
     </>
   );
 }
+
+//           <Map location={location} zoomLevel={17} />

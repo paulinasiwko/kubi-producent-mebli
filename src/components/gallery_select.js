@@ -1,6 +1,6 @@
 import React from 'react';
 import './components.css';
-import {Button, Card, Col, Container, Row} from 'react-bootstrap';
+import {Button, Card, Col, Row} from 'react-bootstrap';
 
 export default function GallerySelect({ firstCard, secondCard, thirdCard, fourthCard }) {
   return(

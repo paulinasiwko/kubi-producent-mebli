@@ -12,7 +12,7 @@ export default function Footer() {
     <Container fluid className='footer'>
       <Nav className='footerContent'>
         <div className='icon'>
-          <FaMapMarkerAlt ize='20' />
+          <FaMapMarkerAlt size='20' />
         </div>
         <p className='borderRight'>ul. Jasna 6, 82-335 Jegłownik</p>
         <div className='icon'>
