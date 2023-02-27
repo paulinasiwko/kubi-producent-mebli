@@ -4,13 +4,10 @@ import NavigationMenu from "../components/main_navigation_menu";
 import ContactForm from "../components/contact_form";
 import {Col, Container, Row} from "react-bootstrap";
 import Footer from "../components/footer";
-import Map from '../components/map';
+import {MapContainer, Marker, Popup, TileLayer, useMap} from "react-leaflet";
 
-const location = {
-  address: 'Jasna 6, 82-335 Jegłownik, Polska',
-  lat: 54.121701912291094,
-  lng: 19.303385726980476,
-}
+const position = [54.12222, 19.30422];
+
 export default function ContactInfo() {
   return (
     <>
@@ -43,9 +40,23 @@ export default function ContactInfo() {
         <Row style={{backgroundColor: 'white'}}>
         </Row>
       </Container>
+      <Container fluid style={{backgroundColor: 'white', borderTop: '2px solid grey', borderBottom: '2px solid grey'}}>
+        <Row>
+      <MapContainer className='map' center={position} zoom={15} scrollWheelZoom={false}>
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <Marker position={position}>
+          <Popup>
+            A pretty CSS3 popup. <br /> Easily customizable.
+          </Popup>
+        </Marker>
+      </MapContainer>
+        </Row>
+      </Container>
       <Footer />
     </>
   );
 }
 
-//           <Map location={location} zoomLevel={17} />
