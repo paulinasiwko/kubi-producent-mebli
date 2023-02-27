@@ -11,13 +11,17 @@
     display: block;
     border: 1px solid white;
     background-color: rgb(230, 230, 230, 0.8);
-    margin: 5% 45% 5% 5%;
+    margin: 5% 45% 10% 5%;
 }
 
 .form {
     position: absolute;
     width: 45%;
     margin: 4% 5% 5% 48%;
+}
+
+.alert {
+    height: 60px;
 }
 
 .map {

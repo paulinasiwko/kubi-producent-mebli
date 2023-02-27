@@ -4,7 +4,7 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/error_page";
 import AboutCompany from "./about_company/about_company.js";
-import GalleryPage from "./gallery/main_gallery";
+import GalleryPage from "./main_gallery/main_gallery";
 import HomePage from "./home_page/home_page";
 import ContactInfo from "./contact_info/contact_info";
 
@@ -13,6 +13,10 @@ import ContactInfo from "./contact_info/contact_info";
 
 import '../node_modules/react-bootstrap/dist/react-bootstrap';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import KitchenGallery from "./kitchen_gallery/kitchen_gallery";
+import WardrobeGallery from "./wardrobe_gallery/wardrobe_gallery";
+import BathroomGallery from "./bathroom_gallery/bathroom_gallery";
+import RoomGallery from "./room_gallery/room_gallery";
 
 
 const router = createBrowserRouter([
@@ -26,12 +30,28 @@ const router = createBrowserRouter([
     element: <AboutCompany />,
   },
   {
-    path: '/gallery',
+    path: '/main_gallery',
     element: <GalleryPage />,
   },
   {
     path: '/contact-info',
     element: <ContactInfo />,
+  },
+  {
+    path: '/kitchen-gallery',
+    element: <KitchenGallery />,
+  },
+  {
+    path: '/wardrobe-gallery',
+    element: <WardrobeGallery />,
+  },
+  {
+     path: '/bathroom-gallery',
+     element: <BathroomGallery />,
+  },
+  {
+    path: '/room-gallery',
+    element: <RoomGallery />,
   },
 ]);
 

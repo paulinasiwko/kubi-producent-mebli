@@ -4,10 +4,7 @@ import NavigationMenu from "../components/main_navigation_menu";
 import ContactForm from "../components/contact_form";
 import {Col, Container, Row} from "react-bootstrap";
 import Footer from "../components/footer";
-import {MapContainer, Marker, Popup, TileLayer, useMap} from "react-leaflet";
-
-const position = [54.12222, 19.30422];
-
+import Map from "../components/map";
 export default function ContactInfo() {
   return (
     <>
@@ -42,17 +39,7 @@ export default function ContactInfo() {
       </Container>
       <Container fluid style={{backgroundColor: 'white', borderTop: '2px solid grey', borderBottom: '2px solid grey'}}>
         <Row>
-      <MapContainer className='map' center={position} zoom={15} scrollWheelZoom={false}>
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={position}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
-      </MapContainer>
+          <Map />
         </Row>
       </Container>
       <Footer />

@@ -15,7 +15,7 @@ export default function HomePageScreen() {
         <Carousel.Caption>
           <div className='transbox'>
             <h1 className='title'>Kuchnie na wymiar</h1>
-            <Link to={'/gallery'}><Button
+            <Link to={'/main_gallery'}><Button
               variant='light'
               className='mt-3 button'>Zobacz galerię</Button></Link>
           </div>
@@ -29,7 +29,7 @@ export default function HomePageScreen() {
         <Carousel.Caption>
           <div className='transbox'>
             <h1 className='title'>Szafy i garderoby</h1>
-            <Link to={'/gallery'}><Button
+            <Link to={'/main_gallery'}><Button
               variant='light'
               className='mt-3 button'>Zobacz galerię</Button></Link>
           </div>
@@ -43,7 +43,7 @@ export default function HomePageScreen() {
         <Carousel.Caption>
           <div className='transbox'>
             <h1 className='title'>Łazienki</h1>
-            <Link to={'/gallery'}><Button
+            <Link to={'/main_gallery'}><Button
               variant='light'
               className='mt-3 button'>Zobacz galerię</Button></Link>
           </div>
@@ -57,7 +57,7 @@ export default function HomePageScreen() {
         <Carousel.Caption>
           <div className='transbox'>
             <h1 className='title'>Meble pokojowe i RTV</h1>
-            <Link to={'/gallery'}><Button
+            <Link to={'/main_gallery'}><Button
               variant='light'
               className='mt-3 button'>Zobacz galerię</Button></Link>
           </div>

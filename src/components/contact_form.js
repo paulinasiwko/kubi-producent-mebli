@@ -1,8 +1,15 @@
-import React from "react";
-import {Container, Row, Col, Card, Form, Button, FormGroup, FloatingLabel} from 'react-bootstrap';
-
+import React, {useState} from "react";
+import {Alert, Container, Row, Col, Card, Form, Button, FormGroup, FloatingLabel} from 'react-bootstrap';
+import emailjs from '@emailjs/browser';
 
 export default function ContactForm() {
+  const [show, setShow] = useState(true);
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs.sendForm('service_3xupwqf', 'template_tsysrsj', e.target, 'MmKBPLfAJvZH6gRig');
+    setShow(false);
+  }
+
   return (
     <>
       <Container>
@@ -13,37 +20,59 @@ export default function ContactForm() {
                 <h4>Napisz do nas!</h4>
               </Card.Header>
               <Card.Body className='shadow'>
-                <Form>
+                <Form onSubmit={sendEmail}>
                   <Form.Group>
                     <Form.Control
                       className='mt-3'
+                      name='email'
                       type='email'
-                      placeholder='E-mail'/>
+                      placeholder='E-mail'
+                      required
+                    />
                   </Form.Group>
                   <Form.Group>
                     <Form.Control
                       className='mt-3'
-                      type='phone number'
-                      placeholder='Numer telefonu'/>
+                      name='phone'
+                      type='phone'
+                      placeholder='Numer telefonu'
+                      required
+                    />
                   </Form.Group>
                   <Form.Group>
                     <Form.Control
                       className='mt-3'
+                      name='title'
                       type='text'
-                      placeholder='Temat wiadomości'/>
+                      placeholder='Temat wiadomości'
+                      required
+                    />
                   </Form.Group>
                   <FloatingLabel label='Treść wiadomości'>
                     <Form.Control
                       className='mt-3'
+                      name='message'
                       as='textarea'
-                      placeholder='Treść wiadomości' />
+                      placeholder='Treść wiadomości'
+                      required
+                    />
                   </FloatingLabel>
                   <FormGroup className='mt-3'>
-                    <Button
-                      className='me-2'
-                      variant='light'
-                      size='sm'
-                      type='submit'>Wyślij</Button>
+                    {show ? (
+                      <Button
+                        className='me-2'
+                        variant='light'
+                        size='sm'
+                        type='submit'
+                      >Wyślij</Button>
+                    ) : (
+                      <Alert variant='success'
+                             className='alert'
+                             onClose={() => setShow(true)}
+                             dismissible>
+                        <p>Wysłano!</p>
+                      </Alert>
+                    )}
                   </FormGroup>
                 </Form>
               </Card.Body>

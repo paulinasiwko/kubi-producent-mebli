@@ -21,7 +21,7 @@ export default function NavigationMenu() {
           <Nav className='me-auto'>
             <Link to={'/'}><Button className='navbarButton' variant='light'>Strona główna</Button></Link>
             <Link to={'/about-company'}><Button className='navbarButton' variant='light'>O firmie</Button></Link>
-            <Link to={'/gallery'}><Button className='navbarButton' variant='light'>Galeria</Button></Link>
+            <Link to={'/main_gallery'}><Button className='navbarButton' variant='light'>Galeria</Button></Link>
             <Link to={'/contact-info'}><Button className='navbarButton' variant='light'>Kontakt</Button></Link>
           </Nav>
           <h6 className='contactNumber'><FaPhoneAlt /> (+48) 502-472-763</h6>

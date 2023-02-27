@@ -1,0 +1,14 @@
+.kitchenBackground {
+    height: 400px;
+    text-align: center;
+    background-image: url('../img/wide_kitchen.jfif');
+    background-size: cover;
+}
+
+.kitchenTransbox {
+    display: block;
+    border: 1px solid white;
+    background-color: rgb(230, 230, 230, 0.8);
+    margin: 10% 38% 0 38%;
+    padding: 40px 20px;
+}

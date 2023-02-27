@@ -1,0 +1,14 @@
+.bathroomBackground {
+    height: 400px;
+    text-align: center;
+    background-image: url('../img/wide_bathroom.webp');
+    background-size: cover;
+}
+
+.bathroomTransbox {
+    display: block;
+    border: 1px solid white;
+    background-color: rgb(230, 230, 230, 0.8);
+    margin: 10% 38% 0 38%;
+    padding: 40px 20px;
+}
