@@ -16,7 +16,7 @@ export default function AboutCompany() {
             <Col sm={9} className='pageBackgroundPhoto'>
               <div className='aboutCompanyTransbox'>
                 <p className='companyDescription'>
-                "A company profile describes what makes your company unique.
+                Firma z dziada pradziada przeszła na kolejnego dziada
                 </p>
                 <div className='borderBottom'></div>
                 <p className='companyDescription'>

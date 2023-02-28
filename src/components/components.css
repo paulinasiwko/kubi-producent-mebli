@@ -3,11 +3,6 @@
     background-color: white;
 }
 
-.mainPhoto {
-    width: 1280px;
-    height: 480px;
-}
-
 .title {
     border-bottom: 4px solid rgb(239, 239, 239);
     margin: auto 20%;
@@ -32,10 +27,6 @@
     box-shadow: 0 3px 5px 0 grey;
 }
 
-.col {
-    margin: 0 auto 5% auto;
-}
-
 /* Buttons */
 
 .navbarButton {
@@ -49,4 +40,5 @@
     margin: 0 auto !important;
     display: block !important;
     border-bottom: 1px solid grey !important;
+    text-decoration: underline white !important;
 }

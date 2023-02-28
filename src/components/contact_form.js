@@ -26,7 +26,7 @@ export default function ContactForm() {
                       className='mt-3'
                       name='email'
                       type='email'
-                      placeholder='E-mail'
+                      placeholder='E-mail*'
                       required
                     />
                   </Form.Group>
@@ -35,20 +35,10 @@ export default function ContactForm() {
                       className='mt-3'
                       name='phone'
                       type='phone'
-                      placeholder='Numer telefonu'
-                      required
+                      placeholder='Numer telefonu (opcjonalnie)'
                     />
                   </Form.Group>
-                  <Form.Group>
-                    <Form.Control
-                      className='mt-3'
-                      name='title'
-                      type='text'
-                      placeholder='Temat wiadomości'
-                      required
-                    />
-                  </Form.Group>
-                  <FloatingLabel label='Treść wiadomości'>
+                  <FloatingLabel label='Treść wiadomości*'>
                     <Form.Control
                       className='mt-3'
                       name='message'
