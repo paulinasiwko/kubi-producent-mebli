@@ -4,10 +4,18 @@ import emailjs from '@emailjs/browser';
 
 export default function ContactForm() {
   const [show, setShow] = useState(true);
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [message, setMessage] = useState("");
+  const re = /^[0-9\b]+$/;
+
   function sendEmail(e) {
     e.preventDefault();
-    emailjs.sendForm('service_3xupwqf', 'template_tsysrsj', e.target, 'MmKBPLfAJvZH6gRig');
+   // emailjs.sendForm('service_3xupwqf', 'template_tsysrsj', e.target, 'MmKBPLfAJvZH6gRig');
     setShow(false);
+    setEmail("");
+    setPhoneNumber("");
+    setMessage("");
   }
 
   return (
@@ -23,8 +31,9 @@ export default function ContactForm() {
                 <Form onSubmit={sendEmail}>
                   <Form.Group>
                     <Form.Control
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       className='mt-3'
-                      name='email'
                       type='email'
                       placeholder='E-mail*'
                       required
@@ -32,21 +41,27 @@ export default function ContactForm() {
                   </Form.Group>
                   <Form.Group>
                     <Form.Control
+                      value={phoneNumber}
+                      onChange={(e) => {
+                        if (e.target.value === '' || re.test(e.target.value)) {
+                        setPhoneNumber(e.target.value)
+                        }}
+                      }
                       className='mt-3'
-                      name='phone'
-                      type='phone'
                       placeholder='Numer telefonu (opcjonalnie)'
                     />
                   </Form.Group>
+                  <FormGroup>
                   <FloatingLabel label='Treść wiadomości*'>
                     <Form.Control
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                       className='mt-3'
-                      name='message'
                       as='textarea'
-                      placeholder='Treść wiadomości'
                       required
                     />
                   </FloatingLabel>
+                  </FormGroup>
                   <FormGroup className='mt-3'>
                     {show ? (
                       <Button
