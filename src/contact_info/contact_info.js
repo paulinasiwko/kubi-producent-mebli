@@ -9,15 +9,21 @@ export default function ContactInfo() {
   return (
     <>
       <NavigationMenu />
-      <div className='form'>
+      <div style={{position: 'absolute',
+        margin: '4% 5% 5% 48%',
+        width: '45%'}}>
         <ContactForm />
       </div>
       <Container fluid>
         <Row>
-          <Col sm={9} className='contactDetailsBackground'>
-            <div className='contactInfoTransbox'>
-            <h2 className='contactDetails'>Kontakt</h2>
-            <p className='contactDetails'>
+          <Col sm={9}
+               className='contactDetailsBackground'>
+            <div style={{display: 'block',
+              border: '1px solid white',
+              backgroundColor: 'rgb(230, 230, 230, 0.8)',
+              margin: '5% 45% 5% 5%'}}>
+            <h2 style={{margin: '20px 30px 40px 30px'}}>Kontakt</h2>
+            <p style={{margin: '20px 30px 40px 30px'}}>
               <b>KUBI - Producent Mebli</b> <br />
               Meble na wymiar Jakub Podufalski <br />
               <br />
@@ -31,13 +37,17 @@ export default function ContactInfo() {
             </p>
             </div>
           </Col>
-          <Col sm={3} style={{backgroundColor: 'grey'}}>
+          <Col sm={3}
+               style={{backgroundColor: 'grey'}}>
           </Col>
         </Row>
         <Row style={{backgroundColor: 'white'}}>
         </Row>
       </Container>
-      <Container fluid style={{backgroundColor: 'white', borderTop: '2px solid grey', borderBottom: '2px solid grey'}}>
+      <Container fluid
+                 style={{backgroundColor: 'white',
+                   borderTop: '2px solid grey',
+                   borderBottom: '2px solid grey'}}>
         <Row>
           <Map />
         </Row>

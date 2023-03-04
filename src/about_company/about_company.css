@@ -1,38 +1,4 @@
-.aboutCompany {
-    margin-top: 80%;
-}
-
-.providerLogo {
-    display: inline;
-    margin-left: 2%;
-}
-
 .pageBackgroundPhoto {
     background-image: url('../img/kuchnia_na_wymiar.jpg');
     background-size: cover;
-}
-
-.aboutCompanyTransbox {
-    display: block;
-    border: 1px solid grey;
-    margin: 5% 10% 5% 20%;
-    background-color: rgb(211, 211, 211, 0.8);
-}
-
-.companyDescription {
-    font-style: italic;
-    margin: 5% 5% 0 10%;
-}
-
-.borderBottom {
-    border-bottom: 1px solid grey;
-    margin-top: 5%;
-    margin-right: 25%;
-    margin-left: 25%;
-}
-
-.signature {
-    text-align: right;
-    font-weight: bold;
-    margin: 5% 10% 5% 0;
 }

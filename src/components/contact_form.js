@@ -24,7 +24,8 @@ export default function ContactForm() {
         <Row>
           <Col>
             <Card style={{border: '1px solid black'}}>
-              <Card.Header className='p-3' style={{backgroundColor: 'lightgrey', color: 'black'}}>
+              <Card.Header className='p-3'
+                           style={{backgroundColor: 'lightgrey', color: 'black'}}>
                 <h4>Napisz do nas!</h4>
               </Card.Header>
               <Card.Body className='shadow'>
@@ -72,7 +73,7 @@ export default function ContactForm() {
                       >Wyślij</Button>
                     ) : (
                       <Alert variant='success'
-                             className='alert'
+                             style={{height: '60px'}}
                              onClose={() => setShow(true)}
                              dismissible>
                         <p>Wysłano!</p>

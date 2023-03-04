@@ -7,10 +7,18 @@ export default function RoomGallery () {
   return (
     <>
       <NavigationMenu />
-      <Container fluid style={{backgroundColor: 'white'}}>
-        <Row className='roomBackground' style={{borderBottom: '2px solid grey'}}>
+      <Container fluid
+                 style={{backgroundColor: 'white'}}>
+        <Row className='roomBackground'
+             style={{borderBottom: '2px solid grey',
+             height: '400px',
+             textAlign: 'center'}}>
           <Col>
-            <h2 className='roomTransbox'>Meble pokojowe i RTV - nasze realizacje</h2>
+            <h2 style={{display: 'block',
+              border: '1px solid white',
+              backgroundColor: 'rgb(230, 230, 230, 0.8)',
+              margin: '110px 450px 0 450px',
+              padding: '40px 20px'}}>Meble pokojowe i RTV - nasze realizacje</h2>
           </Col>
         </Row>
         <Container>

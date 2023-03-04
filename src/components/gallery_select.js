@@ -1,5 +1,4 @@
 import React from 'react';
-import './components.css';
 import {Button, Card, Col, Row} from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
@@ -9,34 +8,81 @@ export default function GallerySelect({ firstCard, secondCard, thirdCard, fourth
     <>
       <Row className='mt-5 mb-5' style={{maxWidth: '100%'}}>
         <Col className='mt-3 mb-3'>
-          <Card className='shadow' style={{height: '380px', width: '550px', marginLeft: 'auto', marginRight: 'auto'}}>
-            <Card.Img src={require('../img/jasna-kuchnia.jpg')} style={{objectFit: 'cover', height: '300px'}} />
+          <Card className='shadow'
+                style={{height: '380px',
+                  width: '550px',
+                  marginLeft: 'auto',
+                  marginRight: 'auto'}}>
+            <Card.Img src={require('../img/jasna-kuchnia.jpg')}
+                      style={{objectFit: 'cover', height: '300px'}} />
             <Card.Body>
-              <Link to={'/kitchen-gallery'}><Button className='cardButton' variant='light'>{firstCard} - zobacz zdjęcia</Button></Link>
+              <Link to={'/kitchen-gallery'}>
+                <Button variant='light'
+                        style={{backgroundColor: 'white',
+                        margin: '0 auto',
+                        display: 'block',
+                        borderBottom: '1px solid grey',
+                        textDecoration: 'underline white'}}>{firstCard} - zobacz zdjęcia</Button>
+              </Link>
             </Card.Body>
           </Card>
         </Col>
         <Col className='mt-3 mb-3'>
-          <Card className='shadow' style={{height: '380px', width: '550px', marginLeft: 'auto', marginRight: 'auto'}}>
-            <Card.Img src={require('../img/szafy.jpg')} style={{objectFit: 'cover', height: '300px'}} />
+          <Card className='shadow'
+                style={{height: '380px',
+                  width: '550px',
+                  marginLeft: 'auto',
+                  marginRight: 'auto'}}>
+            <Card.Img src={require('../img/szafy.jpg')}
+                      style={{objectFit: 'cover', height: '300px'}} />
             <Card.Body>
-              <Link to={'/wardrobe-gallery'}><Button className='cardButton' variant='light'>{secondCard} - zobacz zdjęcia</Button></Link>
+              <Link to={'/wardrobe-gallery'}>
+                <Button variant='light'
+                        style={{backgroundColor: 'white',
+                          margin: '0 auto',
+                          display: 'block',
+                          borderBottom: '1px solid grey',
+                          textDecoration: 'underline white'}}>{secondCard} - zobacz zdjęcia</Button>
+              </Link>
             </Card.Body>
           </Card>
         </Col>
         <Col className='mt-3 mb-3'>
-          <Card className='shadow' style={{height: '380px', width: '550px', marginLeft: 'auto', marginRight: 'auto'}}>
-            <Card.Img src={require('../img/lazienka.jpg')} style={{objectFit: 'cover', height: '300px'}} />
+          <Card className='shadow'
+                style={{height: '380px',
+                  width: '550px',
+                  marginLeft: 'auto',
+                  marginRight: 'auto'}}>
+            <Card.Img src={require('../img/lazienka.jpg')}
+                      style={{objectFit: 'cover', height: '300px'}} />
             <Card.Body>
-              <Link to={'/bathroom-gallery'}><Button className='cardButton' variant='light'>{thirdCard} - zobacz zdjęcia</Button></Link>
+              <Link to={'/bathroom-gallery'}>
+                <Button variant='light'
+                        style={{backgroundColor: 'white',
+                          margin: '0 auto',
+                          display: 'block',
+                          borderBottom: '1px solid grey',
+                          textDecoration: 'underline white'}}>{thirdCard} - zobacz zdjęcia</Button>
+              </Link>
             </Card.Body>
           </Card>
         </Col>
         <Col className='mt-3 mb-3'>
-          <Card className='shadow' style={{height: '380px', width: '550px', marginLeft: 'auto', marginRight: 'auto'}}>
-            <Card.Img src={require('../img/meble_pokojowe.jpg')} style={{objectFit: 'cover', height: '300px'}} />
+          <Card className='shadow'
+                style={{height: '380px',
+                  width: '550px',
+                  marginLeft: 'auto',
+                  marginRight: 'auto'}}>
+            <Card.Img src={require('../img/meble_pokojowe.jpg')}
+                      style={{objectFit: 'cover', height: '300px'}} />
             <Card.Body>
-              <Link to={'/room-gallery'}><Button className='cardButton' variant='light'>{fourthCard} - zobacz zdjęcia</Button></Link>
+              <Link to={'/room-gallery'}>
+                <Button variant='light' style={{backgroundColor: 'white',
+                  margin: '0 auto',
+                  display: 'block',
+                  borderBottom: '1px solid grey',
+                  textDecoration: 'underline white'}}>{fourthCard} - zobacz zdjęcia</Button>
+              </Link>
             </Card.Body>
           </Card>
         </Col>

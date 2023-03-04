@@ -1,6 +1,5 @@
 import React from "react";
 import {Button, Carousel} from "react-bootstrap";
-import './components.css';
 import { Link } from "react-router-dom";
 
 export default function HomePageScreen() {
@@ -13,11 +12,20 @@ export default function HomePageScreen() {
           alt='Kuchnia na wymiar'
           />
         <Carousel.Caption>
-          <div className='transbox'>
-            <h1 className='title'>Kuchnie na wymiar</h1>
-            <Link to={'/main_gallery'}><Button
-              variant='light'
-              className='mt-3 button'>Zobacz galerię</Button></Link>
+          <div style={{display: 'block',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            width: '400px',
+            padding: '20px',
+            backgroundColor: 'rgb(204, 204, 204, 0.7)',
+            border: '1px solid rgb(222, 216, 216)',
+            boxShadow: '0 3px 5px 0 grey'}}>
+            <h1 style={{borderBottom: '4px solid rgb(239, 239, 239)', margin: 'auto 70px'}}>Kuchnie na wymiar</h1>
+            <Link to={'/main_gallery'}>
+              <Button
+                variant='light'
+                className='mt-3 button'>Zobacz galerię</Button>
+            </Link>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -27,11 +35,20 @@ export default function HomePageScreen() {
           alt='Szafy i garderoby'
           />
         <Carousel.Caption>
-          <div className='transbox'>
-            <h1 className='title'>Szafy i garderoby</h1>
+          <div style={{display: 'block',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            width: '400px',
+            padding: '20px',
+            backgroundColor: 'rgb(204, 204, 204, 0.7)',
+            border: '1px solid rgb(222, 216, 216)',
+            boxShadow: '0 3px 5px 0 grey'}}>
+            <h1 style={{borderBottom: '4px solid rgb(239, 239, 239)',
+              margin: 'auto 70px'}}>Szafy i garderoby</h1>
             <Link to={'/main_gallery'}><Button
               variant='light'
-              className='mt-3 button'>Zobacz galerię</Button></Link>
+              className='mt-3 button'>Zobacz galerię</Button>
+            </Link>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -41,11 +58,20 @@ export default function HomePageScreen() {
           alt='Łazienki'
           />
         <Carousel.Caption>
-          <div className='transbox'>
-            <h1 className='title'>Łazienki</h1>
-            <Link to={'/main_gallery'}><Button
+          <div style={{display: 'block',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            width: '400px',
+            padding: '20px',
+            backgroundColor: 'rgb(204, 204, 204, 0.7)',
+            border: '1px solid rgb(222, 216, 216)',
+            boxShadow: '0 3px 5px 0 grey'}}>
+            <h1 style={{borderBottom: '4px solid rgb(239, 239, 239)', margin: 'auto 80px'}}>Łazienki</h1>
+            <Link to={'/main_gallery'}>
+              <Button
               variant='light'
-              className='mt-3 button'>Zobacz galerię</Button></Link>
+              className='mt-3 button'>Zobacz galerię</Button>
+            </Link>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -55,11 +81,20 @@ export default function HomePageScreen() {
           alt='Meble pokojowe'
           />
         <Carousel.Caption>
-          <div className='transbox'>
-            <h1 className='title'>Meble pokojowe i RTV</h1>
-            <Link to={'/main_gallery'}><Button
+          <div style={{display: 'block',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            width: '400px',
+            padding: '20px',
+            backgroundColor: 'rgb(204, 204, 204, 0.7)',
+            border: '1px solid rgb(222, 216, 216)',
+            boxShadow: '0 3px 5px 0 grey'}}>
+            <h1 style={{borderBottom: '4px solid rgb(239, 239, 239)', margin: 'auto 70px'}}>Meble pokojowe i RTV</h1>
+            <Link to={'/main_gallery'}>
+              <Button
               variant='light'
-              className='mt-3 button'>Zobacz galerię</Button></Link>
+              className='mt-3 button'>Zobacz galerię</Button>
+            </Link>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
