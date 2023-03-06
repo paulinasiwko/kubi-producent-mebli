@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Nav, Navbar, NavLink } from 'react-bootstrap';
+import { Nav, Navbar, NavLink } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 export default function NavigationMenu() {
@@ -21,22 +21,38 @@ export default function NavigationMenu() {
             <NavLink
               variant='light'
               href='/'
-              style={{margin: '10px', backgroundColor: 'white', borderBottom: '1px solid grey', textDecoration: 'underline white'}}
+              style={{margin: '10px',
+                color: 'black',
+                backgroundColor: 'white',
+                borderBottom: '1px solid grey',
+                textDecoration: 'underline white'}}
             >Strona główna</NavLink>
             <NavLink
               variant='light'
               href='/about-company'
-              style={{margin: '10px', backgroundColor: 'white', borderBottom: '1px solid grey', textDecoration: 'underline white'}}
+              style={{margin: '10px',
+                color: 'black',
+                backgroundColor: 'white',
+                borderBottom: '1px solid grey',
+                textDecoration: 'underline white'}}
             >O firmie</NavLink>
             <NavLink
               variant='light'
               href='/main-gallery'
-              style={{margin: '10px', backgroundColor: 'white', borderBottom: '1px solid grey', textDecoration: 'underline white'}}
+              style={{margin: '10px',
+                color: 'black',
+                backgroundColor: 'white',
+                borderBottom: '1px solid grey',
+                textDecoration: 'underline white'}}
             >Galeria</NavLink>
             <NavLink
               variant='light'
               href='/contact-info'
-              style={{margin: '10px', backgroundColor: 'white', borderBottom: '1px solid grey', textDecoration: 'underline white'}}
+              style={{margin: '10px',
+                color: 'black',
+                backgroundColor: 'white',
+                borderBottom: '1px solid grey',
+                textDecoration: 'underline white'}}
             >Kontakt</NavLink>
         </Nav>
       </Navbar.Collapse>
