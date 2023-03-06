@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     element: <AboutCompany />,
   },
   {
-    path: '/main_gallery',
+    path: '/main-gallery',
     element: <GalleryPage />,
   },
   {
