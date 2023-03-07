@@ -5,6 +5,14 @@ import { Card, Container, Col, Modal, Row } from "react-bootstrap";
 import Footer from "../components/footer";
 export default function KitchenGallery () {
   const [modalShow, setModalShow] = useState(false);
+  const images = [
+    {
+      img: '../img/kitchen_photos/1.jpg'
+    },
+    {
+      img: '../img/kitchen_photos/2.jpg'
+    },
+    ];
 
   return (
     <>
@@ -26,34 +34,38 @@ export default function KitchenGallery () {
         <Container>
         <Row className='mt-5'
              style={{backgroundColor: 'white'}}>
-          <Col className='mt-3 mb-3'>
-            <Card style={{height: '200px',
-              width: '300px',
-              marginLeft: 'auto',
-              marginRight: 'auto'}}>
-              <Card.Img
-                src={require('../img/kitchen_photos/IMG_0165.JPG')}
-                alt='Zdjęcie kuchni'
-                style={{objectFit: 'cover',
-                  height: '200px',
-                  border: '1px solid black'}}
-                onClick={() => setModalShow(true)}
-              />
-              <Modal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-                centered
-              >
-                <Modal.Body>
-                  <img
-                    src={require('../img/kitchen_photos/IMG_0165.JPG')}
+          {images.map((image) => {
+            return (
+              <Col className='mt-3 mb-3'>
+                <Card style={{height: '200px',
+                        width: '300px',
+                        marginLeft: 'auto',
+                        marginRight: 'auto'}}>
+                  <Card.Img
+                    src={image.img}
                     alt='Zdjęcie kuchni'
-                    className='img-fluid'
+                    style={{objectFit: 'cover',
+                      height: '200px',
+                      border: '1px solid black'}}
+                    onClick={() => setModalShow(true)}
                   />
-                </Modal.Body>
-              </Modal>
-            </Card>
-          </Col>
+                  <Modal
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                    centered
+                  >
+                    <Modal.Body>
+                      <img
+                        src={image.img}
+                        alt='Zdjęcie kuchni'
+                        className='img-fluid'
+                      />
+                    </Modal.Body>
+                  </Modal>
+                </Card>
+              </Col>
+            );
+          })}
         </Row>
       </Container>
       </Container>

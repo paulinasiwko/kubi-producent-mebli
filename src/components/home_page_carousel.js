@@ -124,7 +124,7 @@ export default function HomePageScreen() {
             boxShadow: '0 3px 5px 0 grey'}}>
             <h2 style={{borderBottom: '4px solid rgb(239, 239, 239)',
               margin: 'auto 20%'}}>Kuchnie na wymiar</h2>
-            <Link to={'/main_gallery'}>
+            <Link to={'/main-gallery'}>
               <Button
                 variant='light'
                 className='mt-3 button'>Zobacz galerię</Button>
@@ -149,7 +149,7 @@ export default function HomePageScreen() {
             boxShadow: '0 3px 5px 0 grey'}}>
             <h2 style={{borderBottom: '4px solid rgb(239, 239, 239)',
               margin: 'auto 20%'}}>Szafy i garderoby</h2>
-            <Link to={'/main_gallery'}><Button
+            <Link to={'/main-gallery'}><Button
               variant='light'
               className='mt-3 button'>Zobacz galerię</Button>
             </Link>
@@ -173,7 +173,7 @@ export default function HomePageScreen() {
             boxShadow: '0 3px 5px 0 grey'}}>
             <h2 style={{borderBottom: '4px solid rgb(239, 239, 239)',
               margin: 'auto 20%'}}>Łazienki</h2>
-            <Link to={'/main_gallery'}>
+            <Link to={'/main-gallery'}>
               <Button
                 variant='light'
                 className='mt-3 button'>Zobacz galerię</Button>
@@ -198,7 +198,7 @@ export default function HomePageScreen() {
             boxShadow: '0 3px 5px 0 grey'}}>
             <h2 style={{borderBottom: '4px solid rgb(239, 239, 239)',
               margin: 'auto 20%'}}>Meble pokojowe i RTV</h2>
-            <Link to={'/main_gallery'}>
+            <Link to={'/main-gallery'}>
               <Button
                 variant='light'
                 className='mt-3 button'>Zobacz galerię</Button>

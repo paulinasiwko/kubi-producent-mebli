@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import './bathroom_gallery.css';
 import NavigationMenu from "../components/main_navigation_menu";
-import {Card, Container, Col, Row } from "react-bootstrap";
+import {Card, Container, Col, Row, Modal} from "react-bootstrap";
 import Footer from "../components/footer";
 export default function BathroomGallery () {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <>
       <NavigationMenu />
@@ -29,81 +31,26 @@ export default function BathroomGallery () {
                 width: '300px',
                 marginLeft: 'auto',
                 marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_0179.JPG')}
+                <Card.Img src={require('../img/bathroom_photos/1.JPG')}
+                          alt='Zdjęcie łazienki'
                           style={{objectFit: 'cover',
                             height: '200px',
-                            border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px',
-                width: '300px',
-                marginLeft: 'auto',
-                marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_0204.JPG')}
-                          style={{objectFit: 'cover',
-                            height: '200px',
-                            border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_0231.JPG')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_0242.JPG')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_1214.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_1215.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_1239.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_1240.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_1277.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_1394.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_1395.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_2247.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_2256.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/bathroom_photos/IMG_2257.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
+                            border: '1px solid black'}}
+                          onClick={() => setModalShow(true)}
+                />
+                <Modal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                  centered
+                >
+                  <Modal.Body>
+                    <img
+                      src={require('../img/bathroom_photos/1.JPG')}
+                      alt='Zdjęcie łazienki'
+                      className='img-fluid'
+                    />
+                  </Modal.Body>
+                </Modal>
               </Card>
             </Col>
           </Row>

@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import './room_gallery.css';
 import NavigationMenu from "../components/main_navigation_menu";
-import {Card, Container, Col, Row } from "react-bootstrap";
+import {Card, Container, Col, Row, Modal} from "react-bootstrap";
 import Footer from "../components/footer";
 export default function RoomGallery () {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <>
       <NavigationMenu />
@@ -22,110 +24,33 @@ export default function RoomGallery () {
           </Col>
         </Row>
         <Container>
-          <Row className='mt-5' style={{backgroundColor: 'white'}}>
+          <Row className='mt-5'
+               style={{backgroundColor: 'white'}}>
             <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_0187.JPG')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_0205.JPG')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_0221.JPG')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_0839.JPG')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_0434.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_0435.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_1026.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_1027.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_1029.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_1392.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_1496.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_2152.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_2153.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_2155.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_2157.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_2158.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_2248.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_2250.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_2251.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_2380.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
-              </Card>
-            </Col>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px', width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/IMG_2381.jpg')} style={{objectFit: 'cover', height: '200px', border: '2px solid black'}}/>
+              <Card style={{height: '200px',
+                width: '300px',
+                marginLeft: 'auto',
+                marginRight: 'auto'}}>
+                <Card.Img src={require('../img/rtv_photos/1.JPG')}
+                          alt='Zdjęcie mebli pokojowych'
+                          style={{objectFit: 'cover',
+                            height: '200px',
+                            border: '1px solid black'}}
+                          onClick={() => setModalShow(true)}
+                />
+                <Modal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                  centered
+                >
+                  <Modal.Body>
+                    <img
+                      src={require('../img/rtv_photos/1.JPG')}
+                      alt='Zdjęcie mebli pokojowych'
+                      className='img-fluid'
+                    />
+                  </Modal.Body>
+                </Modal>
               </Card>
             </Col>
           </Row>
