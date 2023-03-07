@@ -42,7 +42,7 @@ export default function KitchenGallery () {
                         marginLeft: 'auto',
                         marginRight: 'auto'}}>
                   <Card.Img
-                    src={image.img}
+                    src={require(image.img)}
                     alt='Zdjęcie kuchni'
                     style={{objectFit: 'cover',
                       height: '200px',
@@ -56,7 +56,7 @@ export default function KitchenGallery () {
                   >
                     <Modal.Body>
                       <img
-                        src={image.img}
+                        src={require(image.img)}
                         alt='Zdjęcie kuchni'
                         className='img-fluid'
                       />

@@ -25,7 +25,7 @@ export default function ContactForm() {
           <Col>
             <Card style={{border: '1px solid black'}}>
               <Card.Header className='p-3'
-                           style={{backgroundColor: 'lightgrey', color: 'black'}}>
+                           style={{backgroundColor: 'grey', color: 'white'}}>
                 <h4>Napisz do nas!</h4>
               </Card.Header>
               <Card.Body className='shadow'>
@@ -67,7 +67,7 @@ export default function ContactForm() {
                     {show ? (
                       <Button
                         className='me-2'
-                        variant='light'
+                        variant='secondary'
                         size='sm'
                         type='submit'
                       >Wyślij</Button>
