@@ -6,11 +6,12 @@ import { Link } from "react-router-dom";
 export default function GallerySelect({ firstCard, secondCard, thirdCard, fourthCard }) {
   return(
     <>
-      <Row className='mt-5 mb-5' style={{maxWidth: '100%'}}>
-        <Col className='mt-3 mb-3'>
+      <Row className='mt-5 mb-5'>
+        <Col className='mt-3 mb-3'
+             xs='12' sm='12' md='6'>
           <Card className='shadow'
                 style={{height: '380px',
-                  width: '550px',
+                  width: '90%',
                   marginLeft: 'auto',
                   marginRight: 'auto'}}>
             <Card.Img src={require('../img/jasna-kuchnia.jpg')}
@@ -27,10 +28,11 @@ export default function GallerySelect({ firstCard, secondCard, thirdCard, fourth
             </Card.Body>
           </Card>
         </Col>
-        <Col className='mt-3 mb-3'>
+        <Col className='mt-3 mb-3'
+             xs='12' sm='12' md='6'>
           <Card className='shadow'
                 style={{height: '380px',
-                  width: '550px',
+                  width: '90%',
                   marginLeft: 'auto',
                   marginRight: 'auto'}}>
             <Card.Img src={require('../img/szafy.jpg')}
@@ -47,10 +49,11 @@ export default function GallerySelect({ firstCard, secondCard, thirdCard, fourth
             </Card.Body>
           </Card>
         </Col>
-        <Col className='mt-3 mb-3'>
+        <Col className='mt-3 mb-3'
+             xs='12' sm='12' md='6'>
           <Card className='shadow'
                 style={{height: '380px',
-                  width: '550px',
+                  width: '90%',
                   marginLeft: 'auto',
                   marginRight: 'auto'}}>
             <Card.Img src={require('../img/lazienka.jpg')}
@@ -67,10 +70,11 @@ export default function GallerySelect({ firstCard, secondCard, thirdCard, fourth
             </Card.Body>
           </Card>
         </Col>
-        <Col className='mt-3 mb-3'>
+        <Col className='mt-3 mb-3'
+             xs='12' sm='12' md='6'>
           <Card className='shadow'
                 style={{height: '380px',
-                  width: '550px',
+                  width: '90%',
                   marginLeft: 'auto',
                   marginRight: 'auto'}}>
             <Card.Img src={require('../img/meble_pokojowe.jpg')}

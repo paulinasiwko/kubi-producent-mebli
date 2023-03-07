@@ -9,17 +9,21 @@ export default function AboutCompany() {
       <NavigationMenu />
       <Container fluid>
         <Row>
-          <Col sm={3} style={{color:'white',
-            backgroundColor: 'grey',
-            fontWeight: 'bold',
-            textAlign: 'center',
-            padding: '20% 0'}}>
+          <Col sm='12'
+               md='3'
+               style={{color:'white',
+                 backgroundColor: 'grey',
+                 fontWeight: 'bold',
+                 textAlign: 'center',
+                 padding: '10% 0'}}>
             <h1>O firmie</h1>
           </Col>
-            <Col sm={9} className='d-inline pageBackgroundPhoto'>
+            <Col sm='12'
+                 md='9'
+                 className='d-block pageBackgroundPhoto'>
               <div style={{display: 'block',
                 border: '1px solid grey',
-                margin: '30px 5%',
+                margin: '30px 10%',
                 backgroundColor: 'rgb(211, 211, 211, 0.8)'}}>
                 <p style={{fontStyle: 'italic',
                   margin: '30px',
@@ -51,25 +55,35 @@ export default function AboutCompany() {
             </Col>
         </Row>
         <Row>
-          <Col sm={12} style={{backgroundColor: 'white'}}>
+          <Col xs='6' sm='6' md='4' lg='2'
+               style={{backgroundColor: 'white', margin: '20px 0'}}>
             <img src={require('../img/zobal.png')}
-                 alt='Zobal'
-                 style={{display: 'inline', marginLeft: '3%'}} />
+                 alt='Zobal'/>
+          </Col>
+          <Col xs='6' sm='6' md='4' lg='2'
+               style={{backgroundColor: 'white', margin: '20px 0'}}>
             <img src={require('../img/gtv.png')}
-                 alt='GTV'
-                 style={{display: 'inline', marginLeft: '3%'}} />
-            <img src={require('../img/swiss_krono.png')}
-                 alt='Swiss-krono'
-                 style={{display: 'inline', marginLeft: '3%'}} />
+                 alt='GTV'/>
+          </Col>
+          <Col xs='6' sm='6' md='4' lg='2'
+               style={{backgroundColor: 'white', margin: '20px 0'}}>
             <img src={require('../img/pfleiderer.png')}
-                 alt='Pfleiderer'
-                 style={{display: 'inline', marginLeft: '3%'}} />
+                 alt='Pfleiderer' />
+          </Col>
+          <Col xs='6' sm='6' md='4' lg='2'
+               style={{backgroundColor: 'white', margin: '20px 0'}}>
             <img src={require('../img/blum.png')}
-                 alt='Blum'
-                 style={{display: 'inline', marginLeft: '3%'}} />
+                 alt='Blum'/>
+          </Col>
+          <Col xs='3' sm='3' md='3' lg='1'
+               style={{backgroundColor: 'white', margin: '20px 0'}}>
             <img src={require('../img/ncs.png')}
-                 alt='NCS'
-                 style={{display: 'inline', marginLeft: '3%'}} />
+                 alt='NCS'/>
+          </Col>
+          <Col xs='9' sm='9' md='5' lg='3'
+               style={{backgroundColor: 'white', margin: '20px 0'}}>
+            <img src={require('../img/swiss_krono.png')}
+                 alt='Swiss-krono'/>
           </Col>
         </Row>
       </Container>
