@@ -5,6 +5,9 @@ import {Card, Container, Col, Row, Modal} from "react-bootstrap";
 import Footer from "../components/footer";
 export default function RoomGallery () {
   const [modalShow, setModalShow] = useState(false);
+  const [images, setImages] = useState(
+    [...Array(20).keys()]
+  );
 
   return (
     <>
@@ -26,33 +29,43 @@ export default function RoomGallery () {
         <Container>
           <Row className='mt-5'
                style={{backgroundColor: 'white'}}>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px',
-                width: '300px',
-                marginLeft: 'auto',
-                marginRight: 'auto'}}>
-                <Card.Img src={require('../img/rtv_photos/1.JPG')}
-                          alt='Zdjęcie mebli pokojowych'
-                          style={{objectFit: 'cover',
-                            height: '200px',
-                            border: '1px solid black'}}
-                          onClick={() => setModalShow(true)}
-                />
-                <Modal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                  centered
-                >
-                  <Modal.Body>
-                    <img
-                      src={require('../img/rtv_photos/1.JPG')}
+            {images.map((image) => {
+              return (
+                <Col key={image} className='mt-3 mb-3'>
+                  <Card style={{
+                    height: '200px',
+                    width: '300px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto'
+                  }}>
+                    <Card.Img
+                      src={require(`../img/rtv_photos/${image}.jpg`)}
                       alt='Zdjęcie mebli pokojowych'
-                      className='img-fluid'
+                      style={{
+                        objectFit: 'cover',
+                        height: '200px',
+                        border: '1px solid black'
+                      }}
+                      onClick={() => setModalShow(true)}
                     />
-                  </Modal.Body>
-                </Modal>
-              </Card>
-            </Col>
+                    <Modal
+                      show={modalShow}
+                      onHide={() => setModalShow(false)}
+                      centered
+                    >
+                      <Modal.Body>
+                        <img
+                          src={require(`../img/rtv_photos/${image}.jpg`)}
+                          alt='Zdjęcie mebli pokojowych'
+                          className='img-fluid'
+                        />
+                      </Modal.Body>
+                    </Modal>
+                  </Card>
+                </Col>
+              );
+            })
+            }
           </Row>
         </Container>
       </Container>

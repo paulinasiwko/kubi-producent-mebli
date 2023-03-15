@@ -5,6 +5,9 @@ import {Card, Container, Col, Row, Modal} from "react-bootstrap";
 import Footer from "../components/footer";
 export default function WardrobeGallery () {
   const [modalShow, setModalShow] = useState(false);
+  const [images, setImages] = useState(
+    [...Array(29).keys()]
+  );
 
   return (
     <>
@@ -26,33 +29,43 @@ export default function WardrobeGallery () {
         <Container>
           <Row className='mt-5'
                style={{backgroundColor: 'white'}}>
-            <Col className='mt-3 mb-3'>
-              <Card style={{height: '200px',
-                width: '300px',
-                marginLeft: 'auto',
-                marginRight: 'auto'}}>
-                <Card.Img src={require('../img/wardrobe_photos/1.jpg')}
-                          alt='Zdjęcie garderoby'
-                          style={{objectFit: 'cover',
-                            height: '200px',
-                            border: '1px solid black'}}
-                          onClick={() => setModalShow(true)}
-                />
-                <Modal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                  centered
-                >
-                  <Modal.Body>
-                    <img
-                      src={require('../img/wardrobe_photos/1.jpg')}
-                      alt='Zdjęcie garderoby'
-                      className='img-fluid'
+            {images.map((image) => {
+              return (
+                <Col key={image} className='mt-3 mb-3'>
+                  <Card style={{
+                    height: '200px',
+                    width: '300px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto'
+                  }}>
+                    <Card.Img
+                      src={require(`../img/wardrobe_photos/${image}.jpg`)}
+                      alt='Zdjęcie szafy'
+                      style={{
+                        objectFit: 'cover',
+                        height: '200px',
+                        border: '1px solid black'
+                      }}
+                      onClick={() => setModalShow(true)}
                     />
-                  </Modal.Body>
-                </Modal>
-              </Card>
-            </Col>
+                    <Modal
+                      show={modalShow}
+                      onHide={() => setModalShow(false)}
+                      centered
+                    >
+                      <Modal.Body>
+                        <img
+                          src={require(`../img/wardrobe_photos/${image}.jpg`)}
+                          alt='Zdjęcie szafy'
+                          className='img-fluid'
+                        />
+                      </Modal.Body>
+                    </Modal>
+                  </Card>
+                </Col>
+              );
+            })
+            }
           </Row>
         </Container>
       </Container>

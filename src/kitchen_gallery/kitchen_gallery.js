@@ -3,16 +3,12 @@ import './kitchen_gallery.css';
 import NavigationMenu from "../components/main_navigation_menu";
 import { Card, Container, Col, Modal, Row } from "react-bootstrap";
 import Footer from "../components/footer";
+
 export default function KitchenGallery () {
   const [modalShow, setModalShow] = useState(false);
-  const images = [
-    {
-      img: '../img/kitchen_photos/1.jpg'
-    },
-    {
-      img: '../img/kitchen_photos/2.jpg'
-    },
-    ];
+  const [images, setImages] = useState(
+    [...Array(70).keys()]
+  );
 
   return (
     <>
@@ -36,17 +32,21 @@ export default function KitchenGallery () {
              style={{backgroundColor: 'white'}}>
           {images.map((image) => {
             return (
-              <Col className='mt-3 mb-3'>
-                <Card style={{height: '200px',
-                        width: '300px',
-                        marginLeft: 'auto',
-                        marginRight: 'auto'}}>
+              <Col key={image} className='mt-3 mb-3'>
+                <Card style={{
+                  height: '200px',
+                  width: '300px',
+                  marginLeft: 'auto',
+                  marginRight: 'auto'
+                }}>
                   <Card.Img
-                    src={require(image.img)}
+                    src={require(`../img/kitchen_photos/${image}.jpg`)}
                     alt='Zdjęcie kuchni'
-                    style={{objectFit: 'cover',
+                    style={{
+                      objectFit: 'cover',
                       height: '200px',
-                      border: '1px solid black'}}
+                      border: '1px solid black'
+                    }}
                     onClick={() => setModalShow(true)}
                   />
                   <Modal
@@ -56,7 +56,7 @@ export default function KitchenGallery () {
                   >
                     <Modal.Body>
                       <img
-                        src={require(image.img)}
+                        src={require(`../img/kitchen_photos/${image}.jpg`)}
                         alt='Zdjęcie kuchni'
                         className='img-fluid'
                       />
@@ -65,7 +65,8 @@ export default function KitchenGallery () {
                 </Card>
               </Col>
             );
-          })}
+          })
+          }
         </Row>
       </Container>
       </Container>
