@@ -3,8 +3,46 @@ import './bathroom_gallery.css';
 import NavigationMenu from "../components/main_navigation_menu";
 import {Card, Container, Col, Row, Modal} from "react-bootstrap";
 import Footer from "../components/footer";
-export default function BathroomGallery () {
+
+function SinglePhoto({ imageNumber }) {
   const [modalShow, setModalShow] = useState(false);
+
+  return (
+    <Col key={imageNumber} className='mt-3 mb-3'>
+      <Card style={{
+        height: '200px',
+        width: '300px',
+        marginLeft: 'auto',
+        marginRight: 'auto'
+      }}>
+        <Card.Img
+          src={require(`../img/bathroom_photos/${imageNumber}.jpg`)}
+          alt='Zdjęcie łazienki'
+          style={{
+            objectFit: 'cover',
+            height: '200px',
+            border: '1px solid black'
+          }}
+          onClick={() => setModalShow(true)}
+        />
+        <Modal
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+          centered
+        >
+          <Modal.Body>
+            <img
+              src={require(`../img/bathroom_photos/${imageNumber}.jpg`)}
+              alt='Zdjęcie łazienki'
+              className='img-fluid'
+            />
+          </Modal.Body>
+        </Modal>
+      </Card>
+    </Col>
+  );
+}
+export default function BathroomGallery () {
   const [images, setImages] = useState(
     [...Array(13).keys()]
   );
@@ -32,38 +70,7 @@ export default function BathroomGallery () {
                style={{backgroundColor: 'white'}}>
             {images.map((image) => {
               return (
-                <Col key={image} className='mt-3 mb-3'>
-                  <Card style={{
-                    height: '200px',
-                    width: '300px',
-                    marginLeft: 'auto',
-                    marginRight: 'auto'
-                  }}>
-                    <Card.Img
-                      src={require(`../img/bathroom_photos/${image}.jpg`)}
-                      alt='Zdjęcie łazienki'
-                      style={{
-                        objectFit: 'cover',
-                        height: '200px',
-                        border: '1px solid black'
-                      }}
-                      onClick={() => setModalShow(true)}
-                    />
-                    <Modal
-                      show={modalShow}
-                      onHide={() => setModalShow(false)}
-                      centered
-                    >
-                      <Modal.Body>
-                        <img
-                          src={require(`../img/bathroom_photos/${image}.jpg`)}
-                          alt='Zdjęcie łazienki'
-                          className='img-fluid'
-                        />
-                      </Modal.Body>
-                    </Modal>
-                  </Card>
-                </Col>
+                <SinglePhoto imageNumber={image} key={image}/>
               );
             })
             }
