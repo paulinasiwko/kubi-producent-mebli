@@ -1,6 +1,7 @@
 import React from 'react';
-import { Nav, Navbar, NavLink } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import MenuButton from "./menu_button";
 
 export default function NavigationMenu() {
   return (
@@ -18,42 +19,14 @@ export default function NavigationMenu() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{marginRight: '30px'}} />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-            <NavLink
-              variant='light'
-              href='/'
-              style={{margin: '10px',
-                color: 'black',
-                backgroundColor: 'white',
-                borderBottom: '1px solid grey',
-                textDecoration: 'underline white'}}
-            >Strona główna</NavLink>
-            <NavLink
-              variant='light'
-              href='/about-company'
-              style={{margin: '10px',
-                color: 'black',
-                backgroundColor: 'white',
-                borderBottom: '1px solid grey',
-                textDecoration: 'underline white'}}
-            >O firmie</NavLink>
-            <NavLink
-              variant='light'
-              href='/main-gallery'
-              style={{margin: '10px',
-                color: 'black',
-                backgroundColor: 'white',
-                borderBottom: '1px solid grey',
-                textDecoration: 'underline white'}}
-            >Galeria</NavLink>
-            <NavLink
-              variant='light'
-              href='/contact-info'
-              style={{margin: '10px',
-                color: 'black',
-                backgroundColor: 'white',
-                borderBottom: '1px solid grey',
-                textDecoration: 'underline white'}}
-            >Kontakt</NavLink>
+          <MenuButton href={'/'}
+                      buttonText={'Strona główna'}/>
+          <MenuButton href={'/about-company'}
+                      buttonText={'O firmie'}/>
+          <MenuButton href={'/main-gallery'}
+                      buttonText={'Galeria'}/>
+          <MenuButton href={'/contact-info'}
+                      buttonText={'Kontakt'}/>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

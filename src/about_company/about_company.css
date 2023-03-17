@@ -1,3 +1,5 @@
 .pageBackgroundPhoto {
     background-image: url('../img/kuchnia_na_wymiar.jpg');
+    display: block;
+    max-width: 100%;
 }

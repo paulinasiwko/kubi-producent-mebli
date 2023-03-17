@@ -1,10 +1,10 @@
 import React from 'react';
 import NavigationMenu from "../components/main_navigation_menu";
-import GallerySelect from "../components/gallery_select";
 import Footer from "../components/footer";
 import {Col, Container, Row} from "react-bootstrap";
+import GalleryCard from "../components/gallery_card";
 
-export default function GalleryPage() {
+export default function MainGallery() {
   return (
     <>
       <NavigationMenu />
@@ -18,12 +18,20 @@ export default function GalleryPage() {
             <div style={{borderBottom: '1px solid white', margin: '30px 20%'}} />
           </Col>
         </Row>
-        <GallerySelect
-          firstCard={'Kuchnie'}
-          secondCard={'Szafy i garderoby'}
-          thirdCard={'Łazienki'}
-          fourthCard={'Meble pokojowe i RTV'}
-          />
+        <Row className='mt-5 mb-5'>
+          <GalleryCard backgroundImage={'jasna-kuchnia'}
+                       linkTo={'kitchen-gallery'}
+                       title={'Kuchnie'} />
+          <GalleryCard backgroundImage={'szafy'}
+                       linkTo={'wardrobe-gallery'}
+                       title={'Szafy i garderoby'} />
+          <GalleryCard backgroundImage={'lazienka'}
+                       linkTo={'bathroom-gallery'}
+                       title={'Łazienki'} />
+          <GalleryCard backgroundImage={'meble_pokojowe'}
+                       linkTo={'room-gallery'}
+                       title={'Meble pokojowe i RTV'} />
+        </Row>
         <Footer />
       </Container>
       <Container fluid style={{maxWidth: '100%'}}>

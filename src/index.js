@@ -4,7 +4,6 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/error_page";
 import AboutCompany from "./about_company/about_company.js";
-import GalleryPage from "./main_gallery/main_gallery";
 import HomePage from "./home_page/home_page";
 import ContactInfo from "./contact_info/contact_info";
 
@@ -17,6 +16,7 @@ import KitchenGallery from "./kitchen_gallery/kitchen_gallery";
 import WardrobeGallery from "./wardrobe_gallery/wardrobe_gallery";
 import BathroomGallery from "./bathroom_gallery/bathroom_gallery";
 import RoomGallery from "./room_gallery/room_gallery";
+import MainGallery from "./main_gallery/main_gallery";
 
 
 const router = createBrowserRouter([
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/main-gallery',
-    element: <GalleryPage />,
+    element: <MainGallery />,
   },
   {
     path: '/contact-info',

@@ -1,0 +1,19 @@
+.bathroomBackground {
+    background-image: url('../img/wide_bathroom.webp');
+    background-size: cover;
+}
+
+.kitchenBackground {
+    background-image: url('../img/wide_kitchen.jfif');
+    background-size: cover;
+}
+
+.roomBackground {
+    background-image: url('../img/wide_room.webp');
+    background-size: contain;
+}
+
+.wardrobeBackground {
+    background-image: url('../img/wide_wardrobe.png');
+    background-size: contain;
+}
