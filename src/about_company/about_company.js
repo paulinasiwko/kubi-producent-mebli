@@ -1,20 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './about_company.css'
 import NavigationMenu from "../components/main_navigation_menu";
 import {Container, Col, Row } from 'react-bootstrap';
 import Footer from "../components/footer";
-
-function SingleLogo ({ logoNumber }) {
-  return (
-    <img src={require(`../img/logo/${logoNumber}.png`)} />
-  );
-}
 export default function AboutCompany() {
-  const [logo, setLogo] = useState(
-    [...Array(4).keys()]
-  );
-
-
   return (
     <>
       <NavigationMenu />
@@ -64,27 +53,6 @@ export default function AboutCompany() {
                   margin: '30px 10% 30px 0'}}>- Jakub Podufalski</p>
               </div>
             </Col>
-        </Row>
-        <Row className='mt-3 mb-3'
-             style={{backgroundColor: 'white'}}>
-          {logo.map((logo) => {
-            return (
-              <Col xs='6' sm='6' md='4' lg='2'
-                   style={{backgroundColor: 'white', margin: '20px 0'}}
-                   key={logo}>
-                <SingleLogo logoNumber={logo}
-                            key={logo}/>
-              </Col>
-            );
-          })}
-          <Col xs='4' sm='4' md='3' lg='1'
-               style={{backgroundColor: 'white', margin: '20px 0'}}>
-            <img src={require(`../img/logo/4.png`)} />
-          </Col>
-          <Col xs='8' sm='8' md='5' lg='3'
-               style={{backgroundColor: 'white', margin: '20px 0'}}>
-          <img src={require(`../img/logo/5.png`)} />
-          </Col>
         </Row>
       </Container>
       <Footer />
