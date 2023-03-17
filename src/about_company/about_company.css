@@ -1,5 +1,5 @@
 .pageBackgroundPhoto {
-    background-image: url('../img/kuchnia_na_wymiar.jpg');
-    display: block;
+    background-image: url('../img/background/kitchen_carousel.jpg');
+    background-size: cover;
     max-width: 100%;
 }

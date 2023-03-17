@@ -6,10 +6,10 @@ export default function HomePageCarousel() {
   return (
     <>
       <Carousel variant='dark'>
-      <Carousel.Item>
+      <Carousel.Item style={{maxHeight: '900px'}}>
         <img
-          className='d-block w-100'
-          src={require('../img/kuchnia_na_wymiar.jpg')}
+          className='d-block w-100 h-100'
+          src={require('../img/background/kitchen_carousel.jpg')}
           alt='Kuchnia na wymiar'
         />
         <Carousel.Caption>
@@ -30,10 +30,10 @@ export default function HomePageCarousel() {
           </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item style={{maxHeight: '900px'}}>
         <img
           className='d-block w-100'
-          src={require('../img/szafy.jpg')}
+          src={require('../img/background/wardrobe.jpg')}
           alt='Szafy i garderoby'
         />
         <Carousel.Caption>
@@ -54,10 +54,10 @@ export default function HomePageCarousel() {
           </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item style={{maxHeight: '900px'}}>
         <img
           className='d-block w-100'
-          src={require('../img/lazienka.jpg')}
+          src={require('../img/background/bathroom_bright.jfif')}
           alt='Łazienki'
         />
         <Carousel.Caption>
@@ -79,10 +79,10 @@ export default function HomePageCarousel() {
           </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item style={{maxHeight: '900px'}}>
         <img
           className='d-block w-100'
-          src={require('../img/meble_pokojowe.jpg')}
+          src={require('../img/background/room.jpg')}
           alt='Meble pokojowe'
         />
         <Carousel.Caption>

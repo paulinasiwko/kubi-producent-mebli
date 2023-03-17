@@ -48,7 +48,6 @@ export default function AdditionalGallery ({ imageFolder, alt, backgroundImage, 
     [...Array(galleryArrayLength).keys()]
   );
 
-
   return (
     <>
       <NavigationMenu />

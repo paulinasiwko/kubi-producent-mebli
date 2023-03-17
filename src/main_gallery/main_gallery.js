@@ -19,16 +19,16 @@ export default function MainGallery() {
           </Col>
         </Row>
         <Row className='mt-5 mb-5'>
-          <GalleryCard backgroundImage={'jasna-kuchnia'}
+          <GalleryCard backgroundImage={'kitchen'}
                        linkTo={'kitchen-gallery'}
                        title={'Kuchnie'} />
-          <GalleryCard backgroundImage={'szafy'}
+          <GalleryCard backgroundImage={'wardrobe'}
                        linkTo={'wardrobe-gallery'}
                        title={'Szafy i garderoby'} />
-          <GalleryCard backgroundImage={'lazienka'}
+          <GalleryCard backgroundImage={'bathroom_carousel'}
                        linkTo={'bathroom-gallery'}
                        title={'Łazienki'} />
-          <GalleryCard backgroundImage={'meble_pokojowe'}
+          <GalleryCard backgroundImage={'room'}
                        linkTo={'room-gallery'}
                        title={'Meble pokojowe i RTV'} />
         </Row>

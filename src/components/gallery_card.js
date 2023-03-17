@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Card, Col, Row} from 'react-bootstrap';
+import {Button, Card, Col } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 
@@ -13,7 +13,7 @@ export default function GalleryCard({ backgroundImage, linkTo, title }) {
                   width: '90%',
                   marginLeft: 'auto',
                   marginRight: 'auto'}}>
-            <Card.Img src={require(`../img/${backgroundImage}.jpg`)}
+            <Card.Img src={require(`../img/background/${backgroundImage}.jpg`)}
                       style={{objectFit: 'cover', height: '300px'}} />
             <Card.Body>
               <Link to={`/${linkTo}`}>

@@ -1,19 +1,19 @@
 .bathroomBackground {
-    background-image: url('../img/wide_bathroom.webp');
+    background-image: url('../img/background/bathroom.jpg');
     background-size: cover;
 }
 
 .kitchenBackground {
-    background-image: url('../img/wide_kitchen.jfif');
+    background-image: url('../img/background/kitchen_bright.jpg');
     background-size: cover;
 }
 
 .roomBackground {
-    background-image: url('../img/wide_room.webp');
-    background-size: contain;
+    background-image: url('../img/background/room.jpg');
+    background-size: cover;
 }
 
 .wardrobeBackground {
-    background-image: url('../img/wide_wardrobe.png');
-    background-size: contain;
+    background-image: url('../img/background/wardrobe.jpg');
+    background-size: cover;
 }
