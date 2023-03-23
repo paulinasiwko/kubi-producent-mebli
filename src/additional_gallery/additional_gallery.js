@@ -55,13 +55,14 @@ export default function AdditionalGallery ({ imageFolder, alt, backgroundImage, 
                  style={{backgroundColor: 'white'}}>
         <Row className={`${backgroundImage}`}
              style={{borderBottom: '2px solid grey',
-               textAlign: 'center'}}>
+                 textAlign: 'center',
+                 height: '400px'}}>
           <Col>
             <div style={{display: 'block',
                 border: '1px solid white',
                 backgroundColor: 'rgb(230, 230, 230, 0.8)',
-                margin: '70px auto',
-                padding: '20px 10px',
+                margin: '100px auto',
+                padding: '30px 10px',
                 maxWidth: '350px'}}>
               <h2 style={{margin: 'auto 20px'}}>{title} - nasze realizacje</h2>
             </div>

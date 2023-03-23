@@ -28,25 +28,33 @@ export default function AboutCompany() {
                 <p style={{fontStyle: 'italic',
                   margin: '30px',
                   textAlign: 'center'}}>
-                  Firma z dziada pradziada przeszła na kolejnego dziada
+                  Firma "KUBI - Producent mebli" funkcjonuje i nieustannie się rozwija od 2020 roku.
                 </p>
                 <div style={{borderBottom: '1px solid white',
                   margin: '0 20%'}} />
                 <p style={{fontStyle: 'italic',
                   margin: '30px',
                   textAlign: 'center'}}>
-                  It automatically differentiates your brand because no other company has the exact same
-                founding story and reason for existing that your business does. Your history and values
-                are integral parts of your brand positioning strategy.
+                  Jesteśmy rodzinną firmą z Jegłownika, która świadczy usługi stolarskie na terenie całej Polski.
+                  Zajmujemy się wszelkiego rodzaju meblami pod wymiar tj. zabudowy kuchenne, szafy, garderoby, meble pokojowe, meble sypialniane i RTV.
+                  Na swoim koncie mamy ogrom zakończonych projektów, a o naszym sukcesie świadczą setki zadowolonych klientów.
+                  Naszą pracę wykonujemy solidnie i z niezwykłą starannością.
                 </p>
                 <div style={{borderBottom: '1px solid white',
                   margin: '0 20%'}} />
                 <p style={{fontStyle: 'italic',
                   margin: '30px',
                   textAlign: 'center'}}>
-                For instance, Starbucks’ coffee may not necessarily be better than Dunkin’ Donuts’ coffee,
-                but because Starbucks goes into details about its high-quality ingredients,
-                it immediately creates the sense that you’ll be paying a little more for a "better" product."
+                  Do produkcji naszych mebli używamy najlepszej jakości materiałów oraz akcesoriów meblowych.
+                  Wkładamy dużo pracy i serca, by nasi klienci byli spokojni i przede wszystkim zadowoleni z naszych usług, ponieważ Państwa satysfakcja jest dla nas
+                  najważniejsza.
+                </p>
+                <div style={{borderBottom: '1px solid white',
+                  margin: '0 20%'}} />
+                <p style={{fontStyle: 'italic',
+                  margin: '30px',
+                  textAlign: 'center'}}>
+                  Jesteś zainteresowany/a? Skontaktuj się z nami! Chętnie odpowiemy na państwa pytania i rozwiejemy wszelkie wątpliwości :)
                 </p>
                 <p style={{textAlign: 'right',
                   fontWeight: 'bold',

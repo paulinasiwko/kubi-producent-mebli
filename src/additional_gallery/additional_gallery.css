@@ -4,12 +4,12 @@
 }
 
 .kitchenBackground {
-    background-image: url('../img/background/kitchen_bright.jpg');
+    background-image: url('../img/background/kitchen_background.jpg');
     background-size: cover;
 }
 
 .roomBackground {
-    background-image: url('../img/background/room.jpg');
+    background-image: url('../img/background/living_room.jpg');
     background-size: cover;
 }
 

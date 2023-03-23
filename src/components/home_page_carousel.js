@@ -6,7 +6,7 @@ export default function HomePageCarousel() {
   return (
     <>
       <Carousel variant='dark'>
-      <Carousel.Item style={{maxHeight: '900px'}}>
+      <Carousel.Item style={{maxHeight: '700px'}}>
         <img
           className='d-block w-100 h-100'
           src={require('../img/background/kitchen_carousel.jpg')}
@@ -30,7 +30,7 @@ export default function HomePageCarousel() {
           </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item style={{maxHeight: '900px'}}>
+      <Carousel.Item style={{maxHeight: '700px'}}>
         <img
           className='d-block w-100'
           src={require('../img/background/wardrobe.jpg')}
@@ -54,7 +54,7 @@ export default function HomePageCarousel() {
           </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item style={{maxHeight: '900px'}}>
+      <Carousel.Item style={{maxHeight: '700px'}}>
         <img
           className='d-block w-100'
           src={require('../img/background/bathroom_bright.jfif')}
@@ -79,7 +79,7 @@ export default function HomePageCarousel() {
           </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item style={{maxHeight: '900px'}}>
+      <Carousel.Item style={{maxHeight: '700px'}}>
         <img
           className='d-block w-100'
           src={require('../img/background/room.jpg')}
