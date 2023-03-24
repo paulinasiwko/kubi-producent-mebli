@@ -2,7 +2,7 @@
   "name": "kubi-producent-mebli",
   "version": "0.1.2",
   "private": true,
-  "homepage": "https://paulinasiwko.github.io",
+  "homepage": "https://paulinasiwko.github.io/kubi-producent-mebli/",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
