@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kubi-producent-mebli/static/css/main.3ae1ecfe.css",
-    "main.js": "/kubi-producent-mebli/static/js/main.ad55f5a5.js",
+    "main.js": "/kubi-producent-mebli/static/js/main.2ab81987.js",
     "static/media/kitchen.jpg": "/kubi-producent-mebli/static/media/kitchen.bbf7709c8c1e0fd46242.jpg",
     "static/media/kitchen_background.jpg": "/kubi-producent-mebli/static/media/kitchen_background.abe5c2700d19354021fe.jpg",
     "static/media/kitchen_bright.jpg": "/kubi-producent-mebli/static/media/kitchen_bright.ed1f193c67cc668bb2ea.jpg",
@@ -92,10 +92,10 @@
     "static/media/logo.jpg": "/kubi-producent-mebli/static/media/logo.506ed039b6f5dc50da8d.jpg",
     "index.html": "/kubi-producent-mebli/index.html",
     "main.3ae1ecfe.css.map": "/kubi-producent-mebli/static/css/main.3ae1ecfe.css.map",
-    "main.ad55f5a5.js.map": "/kubi-producent-mebli/static/js/main.ad55f5a5.js.map"
+    "main.2ab81987.js.map": "/kubi-producent-mebli/static/js/main.2ab81987.js.map"
   },
   "entrypoints": [
     "static/css/main.3ae1ecfe.css",
-    "static/js/main.ad55f5a5.js"
+    "static/js/main.2ab81987.js"
   ]
 }
