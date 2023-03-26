@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/error_page";
 import AboutCompany from "./about_company/about_company.js";
 import HomePage from "./home_page/home_page";
@@ -19,7 +19,7 @@ import RoomGallery from "./room_gallery/room_gallery";
 import MainGallery from "./main_gallery/main_gallery";
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <HomePage />,

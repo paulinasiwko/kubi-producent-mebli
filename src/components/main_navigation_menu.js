@@ -19,7 +19,7 @@ export default function NavigationMenu() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{marginRight: '30px'}} />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <MenuButton href={'/'}
+          <MenuButton href={"/"}
                       buttonText={'Strona główna'}/>
           <MenuButton href={'/about-company'}
                       buttonText={'O firmie'}/>

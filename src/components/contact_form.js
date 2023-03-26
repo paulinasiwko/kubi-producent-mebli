@@ -11,7 +11,7 @@ export default function ContactForm() {
 
   function sendEmail(e) {
     e.preventDefault();
-   // emailjs.sendForm('service_3xupwqf', 'template_tsysrsj', e.target, 'MmKBPLfAJvZH6gRig');
+    emailjs.sendForm('service_3xupwqf', 'template_tsysrsj', e.target, 'MmKBPLfAJvZH6gRig');
     setShow(false);
     setEmail("");
     setPhoneNumber("");
