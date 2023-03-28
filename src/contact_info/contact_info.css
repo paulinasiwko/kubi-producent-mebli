@@ -2,3 +2,23 @@
     background-image: url('../img/background/kitchen.jpg');
     background-size: cover;
 }
+
+.contactInfoTransbox {
+    display: block;
+    border: 1px solid white;
+    background-color: rgb(230, 230, 230, 0.8);
+    margin: 5% 10%;
+}
+
+.text {
+    margin: 20px 30px 40px 30px;
+}
+
+.formBackground {
+    background-color: lightgrey;
+}
+
+.mapContainer {
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+}

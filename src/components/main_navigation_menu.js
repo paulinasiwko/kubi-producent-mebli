@@ -2,21 +2,23 @@ import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import MenuButton from "./menu_button";
+import './components.css';
 
 export default function NavigationMenu() {
   return (
     <Navbar collapseOnSelect
             expand="md"
-            style={{borderBottom: '2px solid grey', backgroundColor: 'white'}}>
+            className='menu'>
       <Navbar.Brand>
         <Link to={'/'}>
           <img
             src={require('../img/logo.jpg')}
             alt='Kubi - producent MEBLI'
-            style={{width: '180px', height: '50px'}}/>
+            className='logo' />
         </Link>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{marginRight: '30px'}} />
+      <Navbar.Toggle aria-controls="responsive-navbar-nav"
+                     className='me-4' />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <MenuButton href={"/"}

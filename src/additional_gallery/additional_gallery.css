@@ -17,3 +17,26 @@
     background-image: url('../img/background/wardrobe.jpg');
     background-size: cover;
 }
+
+.pageBackground {
+    background-color: white;
+}
+
+.galleryTitleBackground {
+    border-bottom: 2px solid grey;
+    text-align: center;
+    height: 400px;
+}
+
+.galleryTransbox {
+    display: block;
+    border: 1px solid white;
+    background-color: rgb(230, 230, 230, 0.8);
+    margin: 100px auto;
+    padding: 30px 10px;
+    max-width: 350px;
+}
+
+.title {
+    margin: auto 20px;
+}

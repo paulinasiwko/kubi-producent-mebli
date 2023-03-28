@@ -13,12 +13,9 @@ export default function ContactInfo() {
         <Row>
           <Col sm='12' lg='7'
                className='contactDetailsBackground'>
-            <div style={{display: 'block',
-              border: '1px solid white',
-              backgroundColor: 'rgb(230, 230, 230, 0.8)',
-              margin: '5% 10%'}}>
-            <h2 style={{margin: '20px 30px 40px 30px'}}>Kontakt</h2>
-            <p style={{margin: '20px 30px 40px 30px'}}>
+            <div className='contactInfoTransbox'>
+            <h2 className='text'>Kontakt</h2>
+            <p className='text'>
               <b>KUBI - Producent Mebli</b> <br />
               Meble na wymiar Jakub Podufalski <br />
               <br />
@@ -33,17 +30,15 @@ export default function ContactInfo() {
             </div>
           </Col>
           <Col lg='5'
-               style={{backgroundColor: 'lightgrey'}}>
-            <div style={{margin: '10% 0'}}>
+               className='formBackground'>
+            <div className='mt-5 mb-5'>
               <ContactForm />
             </div>
           </Col>
         </Row>
       </Container>
       <Container fluid
-                 style={{backgroundColor: 'white',
-                   borderTop: '2px solid grey',
-                   borderBottom: '2px solid grey'}}>
+                 className='mapContainer'>
         <Map />
       </Container>
       <Footer />

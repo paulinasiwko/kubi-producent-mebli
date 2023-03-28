@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Alert, Container, Row, Col, Card, Form, Button, FormGroup, FloatingLabel} from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
-
+import './components.css';
 export default function ContactForm() {
   const [show, setShow] = useState(true);
   const [email, setEmail] = useState("");
@@ -23,9 +23,8 @@ export default function ContactForm() {
       <Container>
         <Row>
           <Col>
-            <Card style={{border: '1px solid black'}}>
-              <Card.Header className='p-3'
-                           style={{backgroundColor: 'grey', color: 'white'}}>
+            <Card className='formCard'>
+              <Card.Header className='p-3 formHeader'>
                 <h4>Napisz do nas!</h4>
               </Card.Header>
               <Card.Body className='shadow'>
@@ -73,7 +72,7 @@ export default function ContactForm() {
                       >Wyślij</Button>
                     ) : (
                       <Alert variant='success'
-                             style={{height: '60px'}}
+                             className='formAlert'
                              onClose={() => setShow(true)}
                              dismissible>
                         <p>Wysłano!</p>

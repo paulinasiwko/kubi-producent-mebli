@@ -1,8 +1,8 @@
 import React from "react";
 import {Button, Carousel} from "react-bootstrap";
 import { Link } from "react-router-dom";
-export default function HomePageCarousel() {
 
+export default function HomePageCarousel() {
   return (
     <>
       <Carousel variant='dark'>

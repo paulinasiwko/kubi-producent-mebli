@@ -1,48 +1,10 @@
 import React, {useState} from "react";
 import './additional_gallery.css';
 import NavigationMenu from "../components/main_navigation_menu";
-import {Card, Container, Col, Row, Modal} from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 import Footer from "../components/footer";
+import SinglePhoto from "../components/single_photo";
 
-function SinglePhoto({ imageNumber, imageFolder, alt }) {
-  const [modalShow, setModalShow] = useState(false);
-
-  return (
-    <Col key={imageNumber} className='mt-3 mb-3'>
-      <Card style={{
-        height: '200px',
-        width: '300px',
-        marginLeft: 'auto',
-        marginRight: 'auto'
-      }}>
-        <Card.Img
-          src={require(`../img/${imageFolder}/${imageNumber}.jpg`)}
-          alt={`Zdjęcie ${alt}`}
-          style={{
-            objectFit: 'cover',
-            height: '200px',
-            border: '1px solid black'
-          }}
-          onClick={() => setModalShow(true)}
-        />
-        <Modal
-          show={modalShow}
-          onHide={() => setModalShow(false)}
-          centered
-        >
-          <Modal.Header closeButton />
-          <Modal.Body>
-            <img
-              src={require(`../img/${imageFolder}/${imageNumber}.jpg`)}
-              alt={`Zdjęcie ${alt}`}
-              className='img-fluid'
-            />
-          </Modal.Body>
-        </Modal>
-      </Card>
-    </Col>
-  );
-}
 export default function AdditionalGallery ({ imageFolder, alt, backgroundImage, title, galleryArrayLength }) {
   const [images, setImages] = useState(
     [...Array(galleryArrayLength).keys()]
@@ -52,25 +14,16 @@ export default function AdditionalGallery ({ imageFolder, alt, backgroundImage, 
     <>
       <NavigationMenu />
       <Container fluid
-                 style={{backgroundColor: 'white'}}>
-        <Row className={`${backgroundImage}`}
-             style={{borderBottom: '2px solid grey',
-                 textAlign: 'center',
-                 height: '400px'}}>
+                 className='pageBackground'>
+        <Row className={`${backgroundImage} galleryTitleBackground`}>
           <Col>
-            <div style={{display: 'block',
-                border: '1px solid white',
-                backgroundColor: 'rgb(230, 230, 230, 0.8)',
-                margin: '100px auto',
-                padding: '30px 10px',
-                maxWidth: '350px'}}>
-              <h2 style={{margin: 'auto 20px'}}>{title} - nasze realizacje</h2>
+            <div className='galleryTransbox'>
+              <h2 className='title'>{title} - nasze realizacje</h2>
             </div>
           </Col>
         </Row>
         <Container>
-          <Row className='mt-5'
-               style={{backgroundColor: 'white'}}>
+          <Row className='mt-5 pageBackground'>
             {images.map((image) => {
               return (
                 <SinglePhoto imageNumber={image}

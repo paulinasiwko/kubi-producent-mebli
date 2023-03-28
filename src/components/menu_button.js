@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import './components.css';
 
 export default function MenuButton({ href, buttonText }) {
   return (
@@ -8,11 +9,6 @@ export default function MenuButton({ href, buttonText }) {
       variant='light'
       as={Link}
       to={href}
-      style={{margin: '10px',
-        color: 'black',
-        backgroundColor: 'white',
-        borderBottom: '1px solid grey',
-        textDecoration: 'underline white'}}
-    >{buttonText}</NavLink>
+      className='menuButton'>{buttonText}</NavLink>
   );
 }
