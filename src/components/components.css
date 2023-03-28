@@ -6,11 +6,10 @@
     text-align: center;
 }
 
-/* carousel-element */
+/* home-page-carousel */
 
 .carouselTransbox {
     display: block;
-    margin: auto;
     max-width: 400px;
     padding: 20px;
     background-color: rgb(204, 204, 204, 0.7);
@@ -21,6 +20,10 @@
 .carouselTitle {
     border-bottom: 4px solid rgb(239, 239, 239);
     margin: auto 20%;
+}
+
+.carouselItem {
+    max-height: 700px;
 }
 
 /* contact-form */
@@ -141,8 +144,6 @@
 .photoCard {
     height: 200px;
     width: 300px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .photo {

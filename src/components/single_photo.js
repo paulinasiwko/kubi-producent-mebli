@@ -7,7 +7,7 @@ export default function SinglePhoto({ imageNumber, imageFolder, alt }) {
     return (
         <Col key={imageNumber}
              className='mt-3 mb-3'>
-            <Card className='photoCard'>
+            <Card className='me-auto ms-auto photoCard'>
                 <Card.Img
                     src={require(`../img/${imageFolder}/${imageNumber}.jpg`)}
                     alt={`Zdjęcie ${alt}`}
