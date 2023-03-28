@@ -2,11 +2,13 @@ import React, {useState} from "react";
 import {Alert, Container, Row, Col, Card, Form, Button, FormGroup, FloatingLabel} from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 import './components.css';
+
 export default function ContactForm() {
   const [show, setShow] = useState(true);
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
+
   const re = /^[0-9\b]+$/;
 
   function sendEmail(e) {
