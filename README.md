@@ -1,6 +1,6 @@
 # kubi-producent-mebli
 
-![GitHub top language](https://img.shields.io/github/languages/top/paulinasiwko/clicky-game)
+![GitHub top language](https://img.shields.io/github/languages/top/paulinasiwko/kubi-producent-mebli)
 
 ## Overview
 
